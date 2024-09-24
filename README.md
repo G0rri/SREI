@@ -1,7 +1,7 @@
 # SREI
 Este repositorio incluye actividades llevadas a cabo en el módulo *SREI* .
 
-![Logo](https://brand.github.com/foundations/logo)
+![Logo](logo.htm)
 
 ## Tema 0 - Introducción
 
