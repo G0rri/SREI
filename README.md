@@ -1,5 +1,5 @@
 # SREI
-Este repositorio incluye actividades llevadas a cabo en el módulo *SREI*.
+Este repositorio incluye actividades llevadas a cabo en el módulo *SREI* .
 
 first header | second header
 ---------- | ----------
