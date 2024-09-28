@@ -7,7 +7,7 @@ Este repositorio incluye actividades llevadas a cabo en el módulo *SREI* .
 
 Actividadades | Descripción
 ---------- | ----------
-[Actividad 0](Actividades)| Ejercicio de repaso de protocolos, comandos curl y telnet, y por último una creación del repositorio en GitHub 
+[Actividad 0](Actividad_0/Actividad_0,1.md)| Ejercicio de repaso de protocolos, comandos curl y telnet, y por último una creación del repositorio en GitHub 
 Actividad 1 | Ejemplo 1
 
 ## Tema 1 - Servidores Web
