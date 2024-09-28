@@ -19,7 +19,8 @@ Las páginas dinámicas son las que se van construyendo mediante las peticiones 
 	
 ## ¿Cómo usar telnet para acceder a un servidor web?
 Para usar telnet hay que 1º descargarlo y 2º escribir algo como “telnet www.qqq.com 80”, donde telnet es el comando, www.qqq.com el dominio y 80 el puerto.
-Request. Métodos principales
+
+## Request. Métodos principales
 GET, POST, TRACE etc..
 	
 ## Response. Códigos
