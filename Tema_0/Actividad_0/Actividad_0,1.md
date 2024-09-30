@@ -21,7 +21,7 @@ Las páginas dinámicas son las que se van construyendo mediante las peticiones 
 Para usar telnet hay que 1º descargarlo y 2º escribir algo como “telnet www.qqq.com 80”, donde telnet es el comando, www.qqq.com el dominio y 80 el puerto.
 
 ## Request. Métodos principales
-GET, POST, TRACE etc..
+GET, POST, PUT, DELTE, TRACE etc..
 	
 ## Response. Códigos
 1XX(Informativo), 2XX(Éxito), 3XX(Redirección), 4XX(Error de cliente), 5XX(Error del servidor).
