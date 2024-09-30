@@ -12,7 +12,8 @@ Para activar telnet en windows 10 seguimos la imagen de abajo.
 A continuación probaremos el comando telnet con algunos ejemplos:
 “telnet www.google.com 80”
 
-![Foto1](Images/Captura de pantalla 1.webp)
+![Captura de pantalla 1](https://github.com/user-attachments/assets/fe1c0e4b-8a44-4d73-b268-b9ae8cd018ab)
+
 
 asd
 ‘GET’
