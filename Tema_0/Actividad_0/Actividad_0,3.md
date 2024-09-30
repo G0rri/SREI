@@ -19,8 +19,8 @@ A continuación probaremos el comando telnet con algunos ejemplos:
 
 ![Captura de pantalla 2](https://github.com/user-attachments/assets/3101f2e7-9aeb-42a1-bf64-e12621f87241)
 
-asd
-‘GET’
+Aparecerá una pestalla en negro, aunque no se vea escribimos ‘GET’ y pulsamos enter.
+Nos aparecerá la imagen de abajo:
 
 ![Captura de pantalla 3](https://github.com/user-attachments/assets/51aea4b4-ecaa-4234-a597-4dbc7a8ebc2c)
 
