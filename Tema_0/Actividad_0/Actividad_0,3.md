@@ -4,6 +4,8 @@
 
 Es un protocolo de red que permite conectarte a un servidor a través de línea de comandos, aunque cabe añadir que no cifra la información.
 
+## Instalación
+
 Para activar telnet en windows 10 seguimos la imagen de abajo.
 
 ![Captura de pantalla 1](https://github.com/user-attachments/assets/fe1c0e4b-8a44-4d73-b268-b9ae8cd018ab)
