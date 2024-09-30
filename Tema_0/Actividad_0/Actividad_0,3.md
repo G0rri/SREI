@@ -36,10 +36,10 @@ Ahora escribimos 'localhost/(nombre del archivo de la página web)' en la url de
 
 ![Captura de pantalla 6](https://github.com/user-attachments/assets/c2678419-2673-47a3-a69a-c2968326a909)
 
-sad
+Para comprobar que funciona escribimos 'telnet localhost 80'
 
 ![Captura de pantalla 7](https://github.com/user-attachments/assets/f384879b-72a6-476b-9ca8-50d6c65af8b5)
 
-asd
+Y como vemos hace una petición porque existe esta página.
 
 ![Captura de pantalla 8](https://github.com/user-attachments/assets/772c7086-0fd2-43e8-9444-5cc44c78ee35)
