@@ -9,8 +9,8 @@ Actividadades | Descripción
 ---------- | ----------
 [Actividad_0,1](Tema_0/Actividad_0/Actividad_0,1.md)| Ejercicio de introducción con HTTP.
 [Actividad_0,2](Tema_0/Actividad_0/Actividad_0,2.md)| Protocolos UDP y TCP.
-[Actividad_0,3](Tema_0/Actividad_0/Actividad_0,3.md)  | Descarga y ejmplos del comando telnet.
-Actividad_0,4 | Ejemplo
+[Actividad_0,3](Tema_0/Actividad_0/Actividad_0,3.md)| Descarga y ejmplos del comando telnet.
+[Actividad_0,4](Tema_0/Actividad_0/Actividad_0,4.md)| Usos al comando cURL
 Actividad_0,5 | Ejemplo
 
 ## Tema 1 - Servidores Web
