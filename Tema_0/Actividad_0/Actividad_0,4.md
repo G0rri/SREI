@@ -8,8 +8,8 @@ Es un comando que te permite tanto enviar como descargar datos (entre otras cosa
 
 ## Ejemplos
 
-```html
-<doctype html>
-<title>Hello World!</title>
-<html>
+Para conseguir el documento html de una página web, escribimos:
 ```
+curl https://www.google.com/
+```
+ ![image](https://github.com/user-attachments/assets/3f271909-0bb7-4d14-af20-d562fb565851)
