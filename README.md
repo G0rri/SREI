@@ -7,7 +7,7 @@ Este repositorio incluye actividades llevadas a cabo en el módulo *SREI* .
 
 Actividadades | Descripción
 ---------- | ----------
-[Actividad_0,1](Actividad_0/Actividad_0,1.md)| Ejercicio de introducción con HTTP.
+[Actividad_0,1](Tema_0/Actividad_0/Actividad_0,1.md)| Ejercicio de introducción con HTTP.
 [Actividad_0,2](Actividad_0/Actividad_0,2.md)| Protocolos UDP y TCP.
 Actividad_0,3 | Ejemplo
 Actividad_0,4 | Ejemplo
