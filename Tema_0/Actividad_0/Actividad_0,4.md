@@ -30,3 +30,18 @@ curl http://google.com -o prueba.html
 ````
 ![image](https://github.com/user-attachments/assets/42dd12fc-c547-4928-95c4-96ff4008b944)
 
++ Para que solo te muestre el encabezado de la página, escribimos:
+
+````
+curl -I http://google.com
+````
+
+![image](https://github.com/user-attachments/assets/3e210151-8ec2-45f9-b846-515eb816e77d)
+
++ Para que haga un redireccionamiento, escribimos:
+
+````
+curl -L http://google.com
+````
+
+![image](https://github.com/user-attachments/assets/52c917ce-43ff-4e5d-910a-5eb437d1bd87)
