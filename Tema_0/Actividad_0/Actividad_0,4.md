@@ -8,4 +8,8 @@ Es un comando que te permite tanto enviar como descargar datos (entre otras cosa
 
 ## Ejemplos
 
-
+```html
+<doctype html>
+<title>Hello World!</title>
+<html>
+```
