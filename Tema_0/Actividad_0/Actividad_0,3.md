@@ -12,20 +12,15 @@ http://www.lawebdelprogramador.com/foros/Windows-10/1510815-Como-activar-Telnet-
 
 Para activar telnet en windows 10 seguimos la imagen de abajo.
 
+![Captura de pantalla 1](https://github.com/user-attachments/assets/fe1c0e4b-8a44-4d73-b268-b9ae8cd018ab)
 
 A continuación probaremos el comando telnet con algunos ejemplos:
 “telnet www.google.com 80”
 
-![Captura de pantalla 1](https://github.com/user-attachments/assets/fe1c0e4b-8a44-4d73-b268-b9ae8cd018ab)
-
+![Captura de pantalla 2](https://github.com/user-attachments/assets/3101f2e7-9aeb-42a1-bf64-e12621f87241)
 
 asd
 ‘GET’
-
-![Captura de pantalla 2](https://github.com/user-attachments/assets/3101f2e7-9aeb-42a1-bf64-e12621f87241)
-
-
-asd
 
 ![Captura de pantalla 3](https://github.com/user-attachments/assets/51aea4b4-ecaa-4234-a597-4dbc7a8ebc2c)
 
