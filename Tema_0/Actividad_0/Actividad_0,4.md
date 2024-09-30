@@ -21,3 +21,11 @@ curl -o archivo.txt http://google.com/archivo.txt
 ````
 
 ![image](https://github.com/user-attachments/assets/df8902d5-51df-4138-9f68-aef9a52f5aa8)
+
+
++  Para guardar el index de una página en un archivo, escribimos:
+
+````
+curl http://ejemplo.com -o salida.html
+````
+
