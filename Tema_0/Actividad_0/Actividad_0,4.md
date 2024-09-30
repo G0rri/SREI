@@ -16,4 +16,8 @@ curl https://www.google.com/
 
 + Para descargar un archivo y luego guardarlo con el nombre que tu le pongas, escribimos:
 
+````
+curl -o archivo.txt http://google.com/archivo.txt
+````
+
 ![image](https://github.com/user-attachments/assets/df8902d5-51df-4138-9f68-aef9a52f5aa8)
