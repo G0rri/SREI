@@ -24,7 +24,7 @@ Nos aparecerá la imagen de abajo:
 
 ![Captura de pantalla 3](https://github.com/user-attachments/assets/51aea4b4-ecaa-4234-a597-4dbc7a8ebc2c)
 
-asd
+Ahora vamos a hacer lo mismo pero desde una página web en local. Para ello nos descargamos XAMPP, una vez descargado activamos los servicios de apache y MySQL.
 
 ![Captura de pantalla 4](https://github.com/user-attachments/assets/4ea2ae5f-7b3e-4363-b1c2-043b0499680a)
 
