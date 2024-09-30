@@ -13,7 +13,10 @@ Para activar telnet en windows 10 seguimos la imagen de abajo.
 ## Usos
 
 A continuación probaremos el comando telnet con el ejemplo:
-“telnet www.google.com 80” donde telnet es el comando, www.google.com es la url y 80 es el puerto.
+````
+telnet www.google.com 80
+````
+donde telnet es el comando, www.google.com es la url y 80 es el puerto.
 
 ![Captura de pantalla 2](https://github.com/user-attachments/assets/3101f2e7-9aeb-42a1-bf64-e12621f87241)
 
@@ -34,7 +37,10 @@ Ahora escribimos 'localhost/(nombre del archivo de la página web)' en la url de
 
 ![Captura de pantalla 6](https://github.com/user-attachments/assets/c2678419-2673-47a3-a69a-c2968326a909)
 
-Para comprobar que funciona escribimos 'telnet localhost 80'
+Para comprobar que funciona escribimos:
+````
+telnet localhost 80
+````
 
 ![Captura de pantalla 7](https://github.com/user-attachments/assets/f384879b-72a6-476b-9ca8-50d6c65af8b5)
 
