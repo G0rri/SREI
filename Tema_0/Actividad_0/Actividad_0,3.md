@@ -28,11 +28,11 @@ Ahora vamos a hacer lo mismo pero desde una página web en local. Para ello nos 
 
 ![Captura de pantalla 4](https://github.com/user-attachments/assets/4ea2ae5f-7b3e-4363-b1c2-043b0499680a)
 
-Dentro de los archivos del XAMPP, nos vamos a htdocs, y aquí dentro creamos una carpeta (en mi caso práctica).
+Dentro de los archivos del XAMPP, nos vamos a htdocs, y aquí dentro creamos una carpeta (en mi caso práctica). Dentro de ella creamos un archivo html para que veamos algo.
 
 ![Captura de pantalla 5](https://github.com/user-attachments/assets/e84a5696-2f22-48bc-a9e1-44ada2d9cbbf)
 
-asd
+Ahora escribimos 'localhost/(nombre del archivo de la página web)' en la url del navegador y enter.
 
 ![Captura de pantalla 6](https://github.com/user-attachments/assets/c2678419-2673-47a3-a69a-c2968326a909)
 
