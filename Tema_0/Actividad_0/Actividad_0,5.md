@@ -10,6 +10,9 @@ Una vez iniciado el .exe, veremos estas 2 carpetas.
 
 Debemos ejecutar el .exe de dentro de la carpeta de Python312, que se llama python a secas.
 
+![image](https://github.com/user-attachments/assets/0c7b89ba-23c8-4b71-921d-d243de86e6b9)
+
+
 ## Ejemplo 1
 
 En mi caso como tengo python instalado en el pen drive, no encontraba la ruta para ejecutar python, por lo que tuve que añadirle este comando para cambiar la ruta: 
