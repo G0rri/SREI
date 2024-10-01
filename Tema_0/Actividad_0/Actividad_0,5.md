@@ -34,7 +34,7 @@ Como vemos ha funcionado perfectamente y la página principal que nos muestra ah
 
 ## Ejemplo 2
 
-Este ejemplo lo que tenemos que hacer es descargar este script de python, que lo que hace es en gran medida lo mismo que hemos hecho anteriormente, pero solo ejecutando este programa.
+Este ejemplo lo que tenemos que hacer es descargar este [script de python](https://gist.github.com/kabinpokhrel/6fd1275603e9d5f1e284be717cbd1bff#file-server-py), que lo que hace es en gran medida lo mismo que hemos hecho anteriormente, pero solo ejecutando este programa.
 
 En la ruta de abajo se muestra la ruta más cómoda:
 
@@ -43,6 +43,10 @@ En la ruta de abajo se muestra la ruta más cómoda:
 
 Ahora abrimos cmd y nos situamos en la ruta donde tengamos descargada el archivo.
 Esto se hace con el comando cd para moverte.
+
+````
+cd
+````
 
 ![image](https://github.com/user-attachments/assets/70a0cc54-8633-469a-ae3a-3e1774ffaa4b)
 
