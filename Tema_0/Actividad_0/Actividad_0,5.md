@@ -1,5 +1,7 @@
 # Actividad 0.5 - Práctica servidor web
 
+## Ejemplo 1
+
 En mi caso como tengo python instalado en el pen drive, no encontraba la ruta para ejecutar python, por lo que tuve que añadirle este comando para cambiar la ruta: 
 ````
 set PATH=G:\Programs\Python\Python312;G:\Programs\Python\Python312\Scripts;%PATH%
