@@ -8,6 +8,7 @@ Una vez iniciado el .exe, veremos estas 2 carpetas.
 
 ![image](https://github.com/user-attachments/assets/d20a6014-72f5-4329-a33c-0165f6ac0968)
 
+Debemos ejecutar el .exe de dentro de la carpeta de Python312, que se llama python a secas.
 
 ## Ejemplo 1
 
