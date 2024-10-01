@@ -1,5 +1,9 @@
 # Actividad 0.5 - Práctica servidor web
 
+## Instalar Python
+
+Es tan fácil como instalar [python](https://www.python.org/downloads/) desde su página web o también puedes hacerlo desde la Microsoft Store.
+
 ## Ejemplo 1
 
 En mi caso como tengo python instalado en el pen drive, no encontraba la ruta para ejecutar python, por lo que tuve que añadirle este comando para cambiar la ruta: 
