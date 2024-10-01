@@ -32,4 +32,4 @@ Como vemos ha funcionado perfectamente y la página principal que nos muestra ah
 
 ![image](https://github.com/user-attachments/assets/5298170f-98aa-4bda-b7a6-f24017c02113)
 
-
+## Ejemplo 2
