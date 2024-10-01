@@ -33,3 +33,30 @@ Como vemos ha funcionado perfectamente y la página principal que nos muestra ah
 ![image](https://github.com/user-attachments/assets/5298170f-98aa-4bda-b7a6-f24017c02113)
 
 ## Ejemplo 2
+
+Este ejemplo lo que tenemos que hacer es descargar este script de python, que lo que hace es en gran medida lo mismo que hemos hecho anteriormente, pero solo ejecutando este programa.
+
+En la ruta de abajo se muestra la ruta más cómoda:
+
+![image](https://github.com/user-attachments/assets/6c7ce604-a4f2-4a41-bbf2-604abca7148e)
+
+
+Ahora abrimos cmd y nos situamos en la ruta donde tengamos descargada el archivo.
+Esto se hace con el comando cd para moverte.
+
+![image](https://github.com/user-attachments/assets/70a0cc54-8633-469a-ae3a-3e1774ffaa4b)
+
+
+Ahora escribimos el nombre del archivo. Si nos pide con que abrirlo, buscamos el archivo ejecutable de la aplicación de python.
+
+![image](https://github.com/user-attachments/assets/fee9cd0d-f0a5-4354-986a-3ab15e1ee5b7)
+
+
+Le damos y aparecerá que ya hemos creado una página web a nivel local con python.
+
+![image](https://github.com/user-attachments/assets/08a0893d-ba2b-46f0-9c4e-bcd3206adbc9)
+
+
+Para comprobarlo, nos vamos a un navegador y escribimos localhost:8000, aquí dentro aparecerán todos los repositorios que hay en ese directorio. Para poner una página de inicio como hicimos en el ejemplo anterior, deberemos de modificar el script.
+
+![image](https://github.com/user-attachments/assets/d2762e22-f6b0-4532-9ed0-74486adb930d)
