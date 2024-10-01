@@ -1,9 +1,9 @@
-# ![SREI](Tema_0)
+# SREI
 Este repositorio incluye actividades llevadas a cabo en el módulo **SREI** .
 
 ![LogoGH](Images/8562a9a5-a1e4-4722-9ec7-47ebccd5901e.webp)
 
-## Tema 0 - Introducción
+## [Tema 0](Tema_0) - Introducción
 
 Actividadades | Descripción
 ---------- | ----------
