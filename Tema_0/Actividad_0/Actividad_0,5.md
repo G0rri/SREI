@@ -3,6 +3,7 @@
 ## Instalar Python
 
 Es tan fácil como instalar [python](https://www.python.org/downloads/) desde su página web o también puedes hacerlo desde la Microsoft Store.
+
 Una vez iniciado el .exe, veremos estas 2 carpetas.
 
 ![image](https://github.com/user-attachments/assets/d20a6014-72f5-4329-a33c-0165f6ac0968)
