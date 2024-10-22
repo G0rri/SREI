@@ -13,9 +13,9 @@ Actividadades | Descripción
 [Actividad_0,4](Tema_0/Actividad_0/Actividad_0,4.md)| Usos al comando cURL.
 [Actividad_0,5](Tema_0/Actividad_0/Actividad_0,5.md)| Crear servidores web mediante python.
 
-## Tema 1 - Servidores Web
+## Tema 1 - Apache
 
 Actividadades | Descripción
 ---------- | ----------
-Ejemplo 2 | Ejemplo 3
+[Actividad_0,1](Tema_1/Actividad_0/Actividad_0,1.md)| Realizaremos una serie de Scripts en Ubuntu, habiendo ya trabajado la instalación de apache.
 Ejemplo 3 | Ejemplo 4
