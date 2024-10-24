@@ -71,7 +71,10 @@ echo "$IP $DOMINIO" | sudo tee -a "/etc/hosts" > /dev/null
 echo "Dominio '$DOMINIO' añadido con la IP '$IP' a /etc/hosts."
 ````
 
-Añadir el dominio y la ip al fichero host.
+![image](https://github.com/user-attachments/assets/db4ef809-a886-4ffb-af07-c44438f26eef)
 
-![image](https://github.com/user-attachments/assets/39a9988f-a81f-47bb-9440-6d34098f2adc)
+Para comprobarlo solo debemos de ejecutarlo con la sintaxis correcta.
 
+![image](https://github.com/user-attachments/assets/8b2595f1-442d-4bc9-b333-d0a60dfdd16d)
+
+Me saltó un error en la línea uno, porque puse la # después de la !.
