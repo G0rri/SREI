@@ -9,7 +9,9 @@ Para empezar debemos de crear el script mediante un editor de texto, en esta oca
 En esta parte del código le preguntamos si se ha introducido un valor válido.
 
 ````
-
+if [$# -eq 0];
+  then echo "Error"
+elif
 ````
 
 ![image](https://github.com/user-attachments/assets/89aab286-9cc2-4970-bac8-6803036fe07c)
