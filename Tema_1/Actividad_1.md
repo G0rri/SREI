@@ -39,17 +39,39 @@ Para comprobar si funciona correctamente, escribimos sudo bash (el nombre del fi
 
 ![image](https://github.com/user-attachments/assets/97386953-fe3d-40ec-84f1-5aa45939db57)
 
+## Script que añade nombre de dominio e IP
+Al principio del script, debemos comprobar si se ha proporcionado la IP y el dominio como argumento. Si no se ha hecho correctamente, se mostrará como se debeusar el script.
 
-Comprobar si se ha proporcionado la IP y el dominio como argumento.
-Comprobar si el dominio existe en el fichero host.
+````
+if [ "$#" -ne 2 ]; then
+    echo "Uso: $0 <IP> <dominio>"
+    exit 1
+fi
+````
+Creamos 2 variables, y le damos el valor del parámetro 1 y 2. El 1 será la IP y el 2 será el nombre del dominio.
+
+````
+IP=$1
+DOMINIO=$2
+````
+Ahora vamos a comprobar si el dominio existe en el fichero host.
+
+````
+if grep -q "$DOMINIO" "/etc/hosts"; then
+    echo "El dominio '$DOMINIO' ya existe en /etc/hosts."
+    exit 1
+fi
+````
++ Ahora vamos a añadir el nuevo dominio y la IP al fichero host. El comando 'tee -a' lo que hace es añadir el contenido al final del archivo sin reemplazarlo. +
++ El segundo echo mostrará un mensaja de éxito si se realiza correctamente. +
+
+````
+echo "$IP $DOMINIO" | sudo tee -a "/etc/hosts" > /dev/null
+
+echo "Dominio '$DOMINIO' añadido con la IP '$IP' a /etc/hosts."
+````
+
 Añadir el dominio y la ip al fichero host.
 
-![image](https://github.com/user-attachments/assets/682ce052-c910-4cc7-a6d8-7e90cdcbb1c7)
+![image](https://github.com/user-attachments/assets/39a9988f-a81f-47bb-9440-6d34098f2adc)
 
-
-
-asd
-
-asd
-
-asd
