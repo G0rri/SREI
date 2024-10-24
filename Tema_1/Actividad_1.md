@@ -11,6 +11,9 @@ Comprobar si se ha proporcionado la IP y el dominio como argumento.
 Comprobar si el dominio existe en el fichero host.
 Añadir el dominio y la ip al fichero host.
 
+![image](https://github.com/user-attachments/assets/ca56e913-399b-4e1a-aab3-3d31af9c4745)
+
+
 asd
 
 asd
