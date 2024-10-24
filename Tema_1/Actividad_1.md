@@ -4,7 +4,13 @@ Para realizar los siguientes scripts, en cada carpeta que vamos a editar, vamos 
 
 ![image](https://github.com/user-attachments/assets/00a738a6-2db8-4ee8-b7b1-ce909f9a016b)
 
-asd
+Para empezar debemos de crear el script mediante un editor de texto, en esta ocasión utilizaremos gedit. 
+
+En esta parte del código le preguntamos si se ha introducido un valor válido.
+
+````
+
+````
 
 ![image](https://github.com/user-attachments/assets/89aab286-9cc2-4970-bac8-6803036fe07c)
 
