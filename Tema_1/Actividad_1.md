@@ -12,6 +12,9 @@ En esta parte del código le preguntamos si se ha introducido un valor válido.
 if [$# -eq 0];
   then echo "Error"
 ````
+
+Aquí analizamos todas las lineas del archivo ports.conf, en busca de la palabra Listen con el parámetro introducido($1).
+
 ````
 elif
   grep -q "Listen $1" "etc/apache2/ports.conf";
