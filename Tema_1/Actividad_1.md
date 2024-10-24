@@ -1,5 +1,6 @@
+# Scripts 
 
-asd
+Para realizar los siguientes scripts, en cada carpeta que vamos a editar, vamos a tener que proporcionar ciertos permisos para poder permitir la edición de estos.
 
 ![image](https://github.com/user-attachments/assets/00a738a6-2db8-4ee8-b7b1-ce909f9a016b)
 
