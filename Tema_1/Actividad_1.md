@@ -89,7 +89,10 @@ pagina() {
     CABECERA=$2
     MENSAJE=$3
 ````
-Con tee agregamos el archivo html en el documentroot al final del archivo sin reemplazarlo. Una vez redirigido a "/var/www/html/pagina_web.html" el texto html, mostramos con un echo la ruta en donde ha sido creado.
++ Con tee agregamos el archivo html en el documentroot al final del archivo sin reemplazarlo. 
++ dev/null lo que hace es descartar los datos no deseados.
++ EOF o End Of Line sirve para coger el texto que incluyas y se lo pasa al comando.
++ Una vez redirigido a "/var/www/html/pagina_web.html" el texto html, mostramos con un echo la ruta en donde ha sido creado. 
 
 ````
 sudo tee "/var/www/html/pagina_web.html" > /dev/null <<EOF
@@ -122,5 +125,11 @@ Y al final llamamos a la función, con su respectivos parámetros.
 ````
 pagina "$1" "$2" "$3"
 ````
-![image](https://github.com/user-attachments/assets/169d1e40-23d2-430a-8149-738a163381cc)
+![image](https://github.com/user-attachments/assets/4659c3e0-5ca8-40dc-8405-2288f79ab9c9)
+
+Para comprobar si ha salido correctamente lo probamos:
+
+![image](https://github.com/user-attachments/assets/70feb123-4cc2-428e-bb4e-ecd0868e98f8)
+
+
 
