@@ -81,7 +81,7 @@ Me saltó un error en la línea uno, porque puse la # después de la !.
 
 ## Script para crear una página web
 
-Para este script lo voy ha realizar dentro de una función, para poder 
+Para este script lo voy ha realizar dentro de una función a la que llamaremos pagina, para poder facilitarnos la legibilidad crearemos 3 variables, donde le daremos el valor de los parámetros que introduzcamos.
 
 ````
 pagina() {
@@ -89,7 +89,7 @@ pagina() {
     CABECERA=$2
     MENSAJE=$3
 ````
-asd
+Con tee agregamos el archivo html 
 
 ````
   sudo tee "/var/www/html/pagina_web.html" <<< <!DOCTYPE html>
