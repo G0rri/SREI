@@ -71,10 +71,54 @@ echo "$IP $DOMINIO" | sudo tee -a "/etc/hosts"
 echo "Dominio '$DOMINIO' añadido con la IP '$IP' a /etc/hosts."
 ````
 
-![image](https://github.com/user-attachments/assets/db4ef809-a886-4ffb-af07-c44438f26eef)
+![image](https://github.com/user-attachments/assets/abd2e3ca-1e14-4157-b20b-93fa1a9f0bf1)
 
 Para comprobarlo solo debemos de ejecutarlo con la sintaxis correcta.
 
 ![image](https://github.com/user-attachments/assets/8b2595f1-442d-4bc9-b333-d0a60dfdd16d)
 
 Me saltó un error en la línea uno, porque puse la # después de la !.
+
+##Script para crear una página web
+
+asd
+
+````
+pagina() {
+    TITULO=$1
+    CABECERA=$2
+    MENSAJE=$3
+````
+asd
+
+````
+  sudo tee "/var/www/html/pagina_web.html" <<< <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>$TITULO</title>
+</head>
+<body>
+    <h1>$CABECERA</h1>
+    <p>$MENSAJE</p>
+</body>
+</html>
+
+    echo "La página web ha sido creada en /var/www/html/pagina_web.html"
+}
+````
+asd
+
+````
+if [ $# -ne 3 ]; then
+    echo "Uso: $0 titulo cabecera mensaje"
+    exit 1
+fi
+````
+asd
+
+````
+pagina "$1" "$2" "$3"
+````
+![image](https://github.com/user-attachments/assets/169d1e40-23d2-430a-8149-738a163381cc)
+
