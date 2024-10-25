@@ -89,7 +89,7 @@ pagina() {
     CABECERA=$2
     MENSAJE=$3
 ````
-Con tee agregamos el archivo html 
+Con tee agregamos el archivo html en el documentroot al final del archivo sin reemplazarlo. Una vez redirigido a "/var/www/html/pagina_web.html" el texto html, mostramos con un echo la ruta en donde ha sido creado.
 
 ````
   sudo tee "/var/www/html/pagina_web.html" <<< <!DOCTYPE html>
@@ -107,7 +107,7 @@ Con tee agregamos el archivo html
     echo "La página web ha sido creada en /var/www/html/pagina_web.html"
 }
 ````
-asd
+Si la cantidad de parámetros no es = a 3, entonces se muestra lasintaxis.
 
 ````
 if [ $# -ne 3 ]; then
@@ -115,7 +115,7 @@ if [ $# -ne 3 ]; then
     exit 1
 fi
 ````
-asd
+Y al final llamamos a la función, con su respectivos parámetros.
 
 ````
 pagina "$1" "$2" "$3"
