@@ -81,7 +81,7 @@ Me saltó un error en la línea uno, porque puse la # después de la !.
 
 ## Script para crear una página web
 
-asd
+Para este script lo voy ha realizar dentro de una función, para poder 
 
 ````
 pagina() {
