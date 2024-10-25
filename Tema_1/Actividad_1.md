@@ -66,7 +66,7 @@ fi
 + El segundo echo mostrará un mensaja de éxito si se realiza correctamente. +
 
 ````
-echo "$IP $DOMINIO" | sudo tee -a "/etc/hosts" > /dev/null
+echo "$IP $DOMINIO" | sudo tee -a "/etc/hosts"
 
 echo "Dominio '$DOMINIO' añadido con la IP '$IP' a /etc/hosts."
 ````
