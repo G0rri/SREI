@@ -92,18 +92,18 @@ pagina() {
 Con tee agregamos el archivo html en el documentroot al final del archivo sin reemplazarlo. Una vez redirigido a "/var/www/html/pagina_web.html" el texto html, mostramos con un echo la ruta en donde ha sido creado.
 
 ````
-  sudo tee "/var/www/html/pagina_web.html" </dev/null <<EOF
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>$TITULO</title>
-</head>
-<body>
-    <h1>$CABECERA</h1>
-    <p>$MENSAJE</p>
-</body>
-</html>
+sudo tee "/var/www/html/pagina_web.html" > /dev/null <<EOF
+	<!DOCTYPE html>
+	<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>$TITULO</title>
+	</head>
+	<body>
+	    <h1>$CABECERA</h1>
+	    <p>$MENSAJE</p>
+	</body>
+	</html>
 EOF
 
     echo "La página web ha sido creada en /var/www/html/pagina_web.html"
