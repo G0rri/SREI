@@ -18,6 +18,3 @@ Actividadades | Descripción
 Actividadades | Descripción
 ---------- | ----------
 [Actividad_1](Tema_1/Actividad_1.md)| Realizaremos una serie de Scripts en Ubuntu, habiendo ya trabajado la instalación de apache.
-
-## Proyecto
-[Proyecto Servidor Web](https://github.com/G0rri/Proyecto-SREI.git)| Este es el repositorio del Proyecto de Servidores Web
