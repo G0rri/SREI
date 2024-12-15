@@ -145,3 +145,5 @@ Reiniciamos apache
 sudo service apache2 reload
 ```
 ![image](https://github.com/user-attachments/assets/4caa8a59-b207-4d90-bbfc-5fe5c4efb7b4)
+
+Los pasos que he seguido están correcto o por lo menos eso creo, pero soy incapaz de mostrarte la comprobación. No encuentro la manera de verlo.
