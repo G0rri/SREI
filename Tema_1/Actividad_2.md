@@ -31,3 +31,9 @@ sudo apt update
 sudo apt upgrade
 ```
 ![image](https://github.com/user-attachments/assets/91f994dd-9f4f-4650-96fe-b701d0831c2f)
+
+Ahora comenzamos con la instalación de apache.
+```
+sudo apt-get install apache2
+```
+![image](https://github.com/user-attachments/assets/1cc62131-026a-444a-b5a3-4f03915f9862)
