@@ -203,3 +203,35 @@ Luego creamos el directorio raiz del dominio:
 mkdir /var/www/awsdomain_ip
 ```
 ![image](https://github.com/user-attachments/assets/d687fac2-828f-428c-a848-2557dcc3d946)
+
+Ahora creamos su respectivo index.html:
+```
+nano /var/www/awsdomain_ip/index.html
+```
+![image](https://github.com/user-attachments/assets/843b4c59-3630-4eab-a2ff-db17133c1c39)
+
+Y ponemos algo para que lo muestre.
+```
+<h1>Funciona perfectamente</h1>
+```
+![image](https://github.com/user-attachments/assets/f32f1fb6-fa7b-40c1-93d3-e84778ac82b2)
+
+Activamos el dominio
+```
+a2ensite awsdomain_ip.conf
+```
+![image](https://github.com/user-attachments/assets/267b89a6-0078-4576-b380-5e9c02bb97c5)
+
+Comprobamos que lo que hayamos escrito esté correcto.
+```
+sudo apache2ctl configtest
+```
+![image](https://github.com/user-attachments/assets/b89b694f-0fae-434f-9005-4cd47e5baf99)
+
+Reiniciamos apache para que se aplique todo correctamente:
+```
+systemctl reload apache2
+```
+![image](https://github.com/user-attachments/assets/73641a1f-8ae0-47c6-a56f-badf30a01ece)
+
+Y en este punto me ocurre lo mismo que en el anterior apartado, sé que está bien pero sigo sin encontrar la forma de mostrartelo para realizarte la comprobación.
