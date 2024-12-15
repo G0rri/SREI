@@ -108,7 +108,7 @@ INSERT INTO `mysql_auth` (`username`, `passwd`, `groups`) VALUES('user', '{SHA}E
 
 Ahora teniendo la base de dato con autenticación necesitaremos una página web vinculada a esta db para poder mostralo. Para esto creamos un directorio que permita mostrarlo.
 ```
-sudo mkdir /var/www/html/aws
+sudo mkdir /var/www/html/protecteddir
 ```
 ![image](https://github.com/user-attachments/assets/aa3aa633-0aff-431d-8e88-e31085600bbd)
 
