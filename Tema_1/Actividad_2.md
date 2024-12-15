@@ -51,45 +51,6 @@ sudo apt-get install mariadb-server mariadb-client -y
 ```
 (La imagen la he perdido, se me olvidó guardarla)
 
-Y activamos los servicios respectivamente.
-```
-sudo systemctl enable apache2
-sudo systemctl enable mysql
-```
-(La imagen la he perdido, se me olvidó guardarla)
-
-Ahora entramos en mysql y creamos una base de datos.
-```
-sudo mysql -u root -p
-create database aws_db;
-```
-![image](https://github.com/user-attachments/assets/df1d04ba-25a0-4bba-adf0-5bec41e3802c)
-
-Luego añadimos privilegios.
-```
-GRANT SELECT, INSERT, UPDATE, DELETE ON aws_db.* TO 'defaultsite_admin'@'localhost' IDENTIFIED BY 'usuario';
-GRANT SELECT, INSERT, UPDATE, DELETE ON aws_db.* TO 'defaultsite_admin'@'localhost.localdomain' IDENTIFIED BY 'password';
-```
-![image](https://github.com/user-attachments/assets/7730f222-2e29-4847-aa28-39b6ad85e261)
-
-Limpiamos los privilegios con:
-```
-flush privileges
-```
-![image](https://github.com/user-attachments/assets/3e8c1c27-0a02-419d-aaec-9f3c9ed3e10a)
-
-Una vez hecho lo anterior vamos a meternos en la base de datos,
-```
-use aws_db;
-```
-![image](https://github.com/user-attachments/assets/4eaa257a-15ff-4486-bca3-d747fe8afaee)
-
-Para que haya una autenticación debe de haber un usuario con privilegios y que esté permitido. Por ello vamos a crear una tabla para aquellos que puedan autenticarse.
-```
-create table mysql_auth ( username varchar(191) not null, passwd varchar(191), groups varchar(191), primary key (username) );
-```
-![image](https://github.com/user-attachments/assets/1fd26fe9-be8a-4b4f-91c3-e173c65dbbf6)
-
 Ahora activamos todos los servicios que hagan falta para la atenticación.
 ```
 sudo a2enmod authn_dbd
@@ -99,4 +60,86 @@ sudo a2enmod dbd
 ```
 ![image](https://github.com/user-attachments/assets/3e3b09ec-9041-4604-b7e0-650b21c1bf8f)
 
-Ahora teniendo la base de dato con autenticación necesitaremos una página web vinculadaa esta db para poder mostralo. Para esto creamos un directorio que permita mostrarlo
+Ahora creamos una base de datos.
+```
+mysqladmin -u root -p create awsdb
+```
+![image](https://github.com/user-attachments/assets/7eaa8988-805e-4e09-a85f-1ef07842caba)
+
+Una vez creamos la base de datos, vamos a configurar unos cuantos parámetros. Por ello entramos dentro de mysql.
+```
+sudo mysql -u root -p
+```
+![image](https://github.com/user-attachments/assets/e991299d-28c2-4747-8a24-62778cbbcffc)
+
+Luego añadimos privilegios.
+```
+GRANT SELECT, INSERT, UPDATE, DELETE ON awsdb.* TO 'aws_admin'@'localhost' IDENTIFIED BY 'aws_admin_password';
+GRANT SELECT, INSERT, UPDATE, DELETE ON awsdb.* TO 'aws_admin'@'localhost.localdomain' IDENTIFIED BY 'aws_admin_password';
+```
+![image](https://github.com/user-attachments/assets/30e4bf70-486b-46d8-b38f-3ef5cca67ad5)
+![image](https://github.com/user-attachments/assets/e9f7e29a-7875-4643-941a-136596467cc0)
+
+Limpiamos los privilegios con:
+```
+flush privileges
+```
+![image](https://github.com/user-attachments/assets/3e8c1c27-0a02-419d-aaec-9f3c9ed3e10a)
+
+Una vez hecho lo anterior vamos a meternos en la base de datos. Para que haya una autenticación debe de haber un usuario con privilegios y que esté permitido. Por ello vamos a crear una tabla para aquellos que puedan autenticarse.
+```
+use aws_db;
+create table mysql_auth ( username varchar(191) not null, passwd varchar(191), groups varchar(191), primary key (username) );
+```
+![image](https://github.com/user-attachments/assets/499142a9-6bd9-40bd-80d4-5f5a852a4ed9)
+
+Ahora pasaremos la contraseña a formato hash, en concreto a SHA1.
+
+```
+htpasswd -bns user  user
+```
+![image](https://github.com/user-attachments/assets/18cdb0ec-c894-4f14-bdc8-0fd2890fdee5)
+
+Este hash junto al nombre del usuario y del grupo, hay que instertarlo dentro de la tabla mysql_auth.
+```
+INSERT INTO `mysql_auth` (`username`, `passwd`, `groups`) VALUES('user', '{SHA}Et6pb+wgWTVmq3VpLJlJWWgzrck=', 'usergroup');
+```
+![image](https://github.com/user-attachments/assets/17f20052-3121-4d34-80f2-6219f75e758f)
+
+Ahora teniendo la base de dato con autenticación necesitaremos una página web vinculada a esta db para poder mostralo. Para esto creamos un directorio que permita mostrarlo.
+```
+sudo mkdir /var/www/html/aws
+```
+![image](https://github.com/user-attachments/assets/aa3aa633-0aff-431d-8e88-e31085600bbd)
+
+Ponemos esto en el .conf.
+```
+ DBDriver mysql
+        DBDParams "dbname=awsdb user=aws_admin pass=aws_admin_password"
+
+        DBDMin 4
+        DBDKeep 8
+        DBDMax 20
+        DBDExptime 300
+
+<Directory "/var/www/html/aws">
+        AuthType Basic
+        AuthName "My Server"
+
+        AuthBasicProvider socache dbd
+
+        AuthnCacheProvideFor dbd
+        AuthnCacheContext my-server
+
+        Require valid-user
+
+        AuthDBDUserPWQuery "SELECT passwd FROM mysql_auth WHERE username = %s"
+</Directory>
+
+```
+![image](https://github.com/user-attachments/assets/7eb8f0ea-f40b-4a0d-a15e-da49e8d30217)
+
+Reiniciamos apache
+```
+sudo service apache2 reload
+```
