@@ -148,6 +148,8 @@ sudo service apache2 reload
 
 Los pasos que he seguido están correcto o por lo menos eso creo, pero soy incapaz de mostrarte la comprobación. No encuentro la manera de verlo.
 
+El manual seguido es: https://www.howtoforge.com/tutorial/password-protect-directories-with-mod_authn_dbd-mysql-on-apache-debian-jessie/
+
 # Crear un certificado autofirmado y activar el módulo SSL
 Empezamos activando el módulo SSL.
 ```
@@ -235,3 +237,5 @@ systemctl reload apache2
 ![image](https://github.com/user-attachments/assets/73641a1f-8ae0-47c6-a56f-badf30a01ece)
 
 Y en este punto me ocurre lo mismo que en el anterior apartado, sé que está bien pero sigo sin encontrar la forma de mostrartelo para realizarte la comprobación.
+
+El manual seguido es: https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-20-04-es
