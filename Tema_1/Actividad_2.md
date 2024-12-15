@@ -81,3 +81,19 @@ use aws_db;
 ```
 ![image](https://github.com/user-attachments/assets/4eaa257a-15ff-4486-bca3-d747fe8afaee)
 
+Para que haya una autenticación debe de haber un usuario con privilegios y que esté permitido. Por ello vamos a crear una tabla para aquellos que puedan autenticarse.
+```
+create table mysql_auth ( username varchar(191) not null, passwd varchar(191), groups varchar(191), primary key (username) );
+```
+![image](https://github.com/user-attachments/assets/1fd26fe9-be8a-4b4f-91c3-e173c65dbbf6)
+
+Ahora activamos todos los servicios que hagan falta para la atenticación.
+```
+sudo a2enmod authn_dbd
+sudo a2enmod authn_socache
+sudo a2enmod socache_shmcb
+sudo a2enmod dbd
+```
+![image](https://github.com/user-attachments/assets/3e3b09ec-9041-4604-b7e0-650b21c1bf8f)
+
+Ahora teniendo la base de dato con autenticación necesitaremos una página web vinculadaa esta db para poder mostralo. Para esto creamos un directorio que permita mostrarlo
