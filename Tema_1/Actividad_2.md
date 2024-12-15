@@ -147,3 +147,59 @@ sudo service apache2 reload
 ![image](https://github.com/user-attachments/assets/4caa8a59-b207-4d90-bbfc-5fe5c4efb7b4)
 
 Los pasos que he seguido están correcto o por lo menos eso creo, pero soy incapaz de mostrarte la comprobación. No encuentro la manera de verlo.
+
+# Crear un certificado autofirmado y activar el módulo SSL
+Empezamos activando el módulo SSL.
+```
+sudo a2enmod ssl
+```
+![image](https://github.com/user-attachments/assets/144e5133-66cf-493a-aa4e-a25ee140661c)
+
+Reiniciamos para que se active bien.
+```
+sudo systemctl restart apache2
+```
+![image](https://github.com/user-attachments/assets/1256e065-53f9-457d-bd58-7b64ef6b91da)
+
+Ahora vamos a crear la clave SSL y los archivos certificados con:
+```
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+```
+![image](https://github.com/user-attachments/assets/f0c376cc-666d-46cf-b4af-86b245982ffb)
+
+Contestaremos para rellenar los datos que nos piden:
+```
+Country Name (2 letter code) [AU]:ES
+State or Province Name (full name) [Some-State]:Prueba
+Locality Name (eg, city) []:Prueba
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:Prueba AWS
+Organizational Unit Name (eg, section) []:Prueba Dept
+Common Name (e.g. server FQDN or YOUR name) []:awsdomain_ip
+Email Address []:webmaster@example.com
+```
+![image](https://github.com/user-attachments/assets/1a6e7e9a-e036-4064-b90c-ddd211682209)
+
+Ahora creamos el servidor si no lo tenemos ya:
+```
+sudo nano /etc/apache2/sites-available/awsdomain_ip.conf
+```
+![image](https://github.com/user-attachments/assets/2e0fbcf3-5504-478c-82d5-5eaa6211685c)
+
+Ponemos tal que esto en el fichero .conf:
+```
+<VirtualHost *:443>
+   ServerName awsdomain_ip
+   DocumentRoot /var/www/awsdomain_ip
+
+   SSLEngine on
+   SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
+   SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
+</VirtualHost>
+```
+![image](https://github.com/user-attachments/assets/f5f0e133-0428-4d11-8747-a65e5f4d5c97)
+
+Luego creamos el directorio raiz del dominio:
+```
+mkdir /var/www/awsdomain_ip
+```
+![image](https://github.com/user-attachments/assets/d687fac2-828f-428c-a848-2557dcc3d946)
