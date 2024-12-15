@@ -122,7 +122,7 @@ Ponemos esto en el .conf.
         DBDMax 20
         DBDExptime 300
 
-<Directory "/var/www/html/aws">
+<Directory "/var/www/html/protecteddir">
         AuthType Basic
         AuthName "My Server"
 
@@ -137,9 +137,11 @@ Ponemos esto en el .conf.
 </Directory>
 
 ```
-![image](https://github.com/user-attachments/assets/7eb8f0ea-f40b-4a0d-a15e-da49e8d30217)
+![image](https://github.com/user-attachments/assets/3db605fd-bb4c-4642-99ea-53379acc7139)
+
 
 Reiniciamos apache
 ```
 sudo service apache2 reload
 ```
+![image](https://github.com/user-attachments/assets/4caa8a59-b207-4d90-bbfc-5fe5c4efb7b4)
