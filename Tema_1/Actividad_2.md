@@ -43,18 +43,21 @@ Continuamos con la instalación de MySQL y PHP para poder crear una autenticaci�
 ```
 sudo apt-get install apache2 php7.0 libapruti11-dbd-mysql -y
 ```
-(La imagen la he perdido)
+(La imagen la he perdido, se me olvidó guardarla)
+
 Descargamos los clientes respectivamente.
 ```
 sudo apt-get install mariadb-server mariadb-client -y
 ```
-(La imagen la he perdido)
+(La imagen la he perdido, se me olvidó guardarla)
+
 Y activamos los servicios respectivamente.
 ```
 sudo systemctl enable apache2
 sudo systemctl enable mysql
 ```
-(La imagen la he perdido)
+(La imagen la he perdido, se me olvidó guardarla)
+
 Ahora entramos en mysql y creamos una base de datos.
 ```
 sudo mysql -u root -p
