@@ -23,3 +23,11 @@ Nos saldrá una alerta de si confiamos.
 Una vez loggeados ya podremos empezar con la práctica.
 
 ![image](https://github.com/user-attachments/assets/883654bc-8ac6-4c97-920a-41f62954ae2e)
+
+## Instalamos Apache
+Para realizar la autenticación primero debemos de tener instalado Apache así que por ello realizamos una actualización de todo.
+```
+sudo apt update
+sudo apt upgrade
+```
+![image](https://github.com/user-attachments/assets/91f994dd-9f4f-4650-96fe-b701d0831c2f)
