@@ -146,7 +146,14 @@ sudo service apache2 reload
 ```
 ![image](https://github.com/user-attachments/assets/4caa8a59-b207-4d90-bbfc-5fe5c4efb7b4)
 
-Los pasos que he seguido están correcto o por lo menos eso creo, pero soy incapaz de mostrarte la comprobación. No encuentro la manera de verlo.
+Para comprobarlo escribimos la IP pública:
+
+![image](https://github.com/user-attachments/assets/f75c7076-4a5d-47fa-9558-4448b3c85cab)
+
+Escribimos el directorio donde hemos hecho la autenticación y listo.
+
+![image](https://github.com/user-attachments/assets/5d125cb7-13b1-49c9-93db-17b9ad38584d)
+
 
 El manual seguido es: https://www.howtoforge.com/tutorial/password-protect-directories-with-mod_authn_dbd-mysql-on-apache-debian-jessie/
 
@@ -236,6 +243,13 @@ systemctl reload apache2
 ```
 ![image](https://github.com/user-attachments/assets/73641a1f-8ae0-47c6-a56f-badf30a01ece)
 
-Y en este punto me ocurre lo mismo que en el anterior apartado, sé que está bien pero sigo sin encontrar la forma de mostrartelo para realizarte la comprobación.
+Para comprobarlo escribimos lo mismo que antes pero debe ser https.
+
+![image](https://github.com/user-attachments/assets/9eec993c-4707-4973-8173-e96167a813a7)
+
+Una vez le damos al certificado vemos que está encriptado con SHA-256.
+
+![image](https://github.com/user-attachments/assets/4398f923-6064-420f-89c8-d8110f784171)
+
 
 El manual seguido es: https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-20-04-es
