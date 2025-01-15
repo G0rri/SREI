@@ -22,6 +22,7 @@ Actividadades | Descripción
 [Actividad_1](Tema_1/Actividad_1.md)| Realizaremos una serie de Scripts en Ubuntu, habiendo ya trabajado la instalación de apache.
 [Actividad_2](Tema_1/Actividad_2.md)| Realizaremos desde una instancia en AWS una autenticación con MySQL y un certificado autofirmado con SSL.
 
-Trimestre 2
+# Trimestre 2
+
 ---------- | ----------
-[Actividad_1]()| 
+[Actividad_1]()| Vamos a crear una DNS y usarla como caché
