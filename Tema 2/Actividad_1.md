@@ -40,8 +40,13 @@ options {
 ![image](https://github.com/user-attachments/assets/7c67e008-f14f-42ad-9c65-2fff5f698db4)
 
 asd
-
+```
+acl goodclients {
+    192.0.2.0/24;
+    localhost;
+    localnets;
+};
+```
 ![image](https://github.com/user-attachments/assets/5811bce2-7612-4b2c-aaaf-fdba30e11099)
-
 
 asd
