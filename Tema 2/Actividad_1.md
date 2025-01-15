@@ -47,6 +47,10 @@ acl goodclients {
     localnets;
 };
 ```
+```
+ recursion yes;
+    allow-query { goodclients; };
+```
 ![image](https://github.com/user-attachments/assets/5811bce2-7612-4b2c-aaaf-fdba30e11099)
 
 asd
