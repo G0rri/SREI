@@ -26,7 +26,7 @@ sudo nano named.conf.options
 ```
 ![image](https://github.com/user-attachments/assets/a3044f7c-7164-4fa6-bbd8-d7c49a27369c)
 
-asd
+Una vez abierto el archivo quitamos todo los comentarios, y nos debrá quear una cosa así.
 ```
 options {
         directory "/var/cache/bind";
@@ -39,7 +39,7 @@ options {
 ```
 ![image](https://github.com/user-attachments/assets/7c67e008-f14f-42ad-9c65-2fff5f698db4)
 
-asd
+Encima de options, deberemos de crear un nuevo bloque acl con el nombre que queramos, en este caso goodclients. Aquí dentro añadiremos que dispositivos tendrán acceso a esta DNS.
 ```
 acl goodclients {
     10.6.0.78/24;
@@ -47,10 +47,11 @@ acl goodclients {
     localnets;
 };
 ```
+Luego, dentro de options añadimos estas lineas que nos permitirán aplicar las lineas de acl.
 ```
  recursion yes;
     allow-query { goodclients; };
 ```
 ![image](https://github.com/user-attachments/assets/5811bce2-7612-4b2c-aaaf-fdba30e11099)
 
-asd
+## Configuramos el DNS como reenviador
