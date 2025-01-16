@@ -42,7 +42,7 @@ options {
 asd
 ```
 acl goodclients {
-    192.0.2.0/24;
+    10.6.0.78/24;
     localhost;
     localnets;
 };
