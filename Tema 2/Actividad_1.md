@@ -55,3 +55,20 @@ Luego, dentro de options añadimos estas lineas que nos permitirán aplicar las 
 ![image](https://github.com/user-attachments/assets/5811bce2-7612-4b2c-aaaf-fdba30e11099)
 
 ## Configuramos el DNS como reenviador
+
+Dentro de options creamos un nuevo bloque para añadir las IP recursivas que están en nuestra DNS. El only sirve para que se ejecuten solo estas IPs,
+```
+forwarders {
+                8.8.8.8;
+                8.8.4.4;
+        };
+        forward only;
+```
+![image](https://github.com/user-attachments/assets/3bcbc29b-8920-419f-a3be-e8403111d70f)
+
+Estas 2 últimas líneas sirven para evitar los posibles fallos de error.
+```
+dnssec-enable yes;
+dnssec-validation yes;
+```
+![image](https://github.com/user-attachments/assets/c0e0e627-2771-4428-81b6-9c9f65299344)
