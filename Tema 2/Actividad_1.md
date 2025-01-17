@@ -1,6 +1,6 @@
-# DNS Caching & fordwarding DNS Server
+# DNS Caching & Fordwarding Server
 
-Actualizamos primero los paquetes que estén desactializados.
+Actualizamos primero los paquetes que estén desactualizados.
 ```
 sudo apt-get update
 ```
