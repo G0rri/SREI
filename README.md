@@ -24,5 +24,8 @@ Actividadades | Descripción
 
 # Trimestre 2
 
+## Tema 2
+
+Actividadades | Descripción
 ---------- | ----------
-[Actividad_1]()| Vamos a crear una DNS y usarla como caché
+[Actividad_1](Tema_2/Actividad_1.md)| Vamos a crear una DNS y usarla como caché
