@@ -78,4 +78,3 @@ asd
 
 ```
 ![image](https://github.com/user-attachments/assets/5b51d275-fff0-4dd0-83a7-b538f4aa8d4e)
-
