@@ -28,4 +28,4 @@ Actividadades | Descripción
 
 Actividadades | Descripción
 ---------- | ----------
-[Actividad_1](Tema_2/Actividad_1.md)| Vamos a crear una DNS y usarla como caché
+[Actividad_1](Tema_2/Actividad_1.md)| Vamos a crear una DNS y usarla como caché y forwarding.
