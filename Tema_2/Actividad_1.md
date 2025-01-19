@@ -73,8 +73,25 @@ dnssec-validation yes;
 ```
 ![image](https://github.com/user-attachments/assets/c0e0e627-2771-4428-81b6-9c9f65299344)
 
-asd
+Para comprobar que todo ha salido bien, primero lo analizamos sintácticamente por si hay algún error.
 ```
-
+sudo named-checkconf
+```
+Luego reiniciamos el paquete bind9.
+```
+sudo systemctl restart bind9
+```
+Y lo permitimos.
+```
+sudo ufw allow Bind9
+```
+```
+sudo journalctl -u bind9 -f
 ```
 ![image](https://github.com/user-attachments/assets/5b51d275-fff0-4dd0-83a7-b538f4aa8d4e)
+
+Para comprobar que funciona, lo hacemos en una maquina cliente en Windows con este comando:
+```
+nslookup www.google.com 10.4.0.111
+```
+Donde la IP es la de la máquina con el DNS configurado.
