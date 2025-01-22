@@ -92,6 +92,11 @@ sudo journalctl -u bind9 -f
 
 Para comprobar que funciona, lo hacemos en una maquina cliente en Windows con este comando:
 ```
+nslookup www.google.com 10.4.0.139
+```
+![image](https://github.com/user-attachments/assets/b99f299a-0e45-4beb-add6-ca3adb108138)
+
+```
 nslookup www.google.com 10.4.0.111
 ```
 Donde la IP es la de la máquina con el DNS configurado.
