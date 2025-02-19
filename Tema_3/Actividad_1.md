@@ -48,6 +48,9 @@ asd
 ![image](https://github.com/user-attachments/assets/fde51ff0-aff2-4724-bdbd-3ef78db7e924)
 
 ## Instalación de Apache y PHP
+Lo primero es actualizar el ubuntu junto a todos sus paquetes y repositorios.
+
+![image](https://github.com/user-attachments/assets/87318902-d3ec-4662-8726-4f563d7606a8)
 
 ## Creación de la base de datos
 
