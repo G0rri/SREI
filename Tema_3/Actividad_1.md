@@ -132,6 +132,10 @@ Esperamos a que se cree.
 
 ![image](https://github.com/user-attachments/assets/b583773b-5536-45e9-aa72-a3008b40b6eb)
 
+Y listo
+
+![image](https://github.com/user-attachments/assets/4769f57e-d667-4e21-9dc8-d76e52b24fca)
+
 ## Implementación de EFS
 
 ## Instalación de Wordpress
