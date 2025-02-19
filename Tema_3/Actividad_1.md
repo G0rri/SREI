@@ -1,4 +1,4 @@
-## Creación de VPC
+![image](https://github.com/user-attachments/assets/0daffc98-c6f7-4834-b27d-3229e229b06b)## Creación de VPC
 Lo primero será crear una VPC (Virtual Private Cloud), para ello buscamos VPC y le damos a donde pone crear.
 
 ![image](https://github.com/user-attachments/assets/98199e9b-89bc-4393-8c51-62b3a33e8249)
@@ -51,6 +51,19 @@ asd
 Lo primero es actualizar el ubuntu junto a todos sus paquetes y repositorios.
 
 ![image](https://github.com/user-attachments/assets/87318902-d3ec-4662-8726-4f563d7606a8)
+
+Ahora instalamos apache
+```
+sudo apt install apache2
+```
+![image](https://github.com/user-attachments/assets/63f29bc5-ff38-44d0-add6-2b44b63c3d14)
+
+Ahora lo iniciamos y activamos.
+```
+sudo systemctl start apache2
+sudo systemctl enable apache2
+```
+![image](https://github.com/user-attachments/assets/2f3fb676-1db4-45ce-aaab-c537c123c779)
 
 ## Creación de la base de datos
 
