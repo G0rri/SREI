@@ -128,6 +128,10 @@ Y por último, en configuración adicional, debemos de poner el nombre de la bas
 
 ![image](https://github.com/user-attachments/assets/e8deb547-7a1f-42e8-9690-120b93d59e4f)
 
+Esperamos a que se cree.
+
+![image](https://github.com/user-attachments/assets/b583773b-5536-45e9-aa72-a3008b40b6eb)
+
 ## Implementación de EFS
 
 ## Instalación de Wordpress
