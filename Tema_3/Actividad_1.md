@@ -100,6 +100,11 @@ php -v
 
 ## Creación de la base de datos
 
+Para crear una base de datos en AWS, escribimos RDS en el buscador. quí dentro nos dirigimos a base de datos y le damos a crear una.
+
+![image](https://github.com/user-attachments/assets/4a4d6450-c04b-43f9-8637-6af73267ace7)
+
+asd
 ## Implementación de EFS
 
 ## Instalación de Wordpress
