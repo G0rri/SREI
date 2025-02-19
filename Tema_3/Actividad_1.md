@@ -148,6 +148,12 @@ Y le damos a configurar.
 
 ![image](https://github.com/user-attachments/assets/83f09027-0f9a-4e96-8061-bcd13632bef3)
 
+Y listo
+
+![image](https://github.com/user-attachments/assets/1d9d33c2-5f5c-4a8e-b572-f2234aa61bd9)
+
 ## Implementación de EFS
+
+Para crear el sistema de almacenamiento Elastic File System
 
 ## Instalación de Wordpress
