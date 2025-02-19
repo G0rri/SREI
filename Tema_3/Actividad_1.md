@@ -104,7 +104,11 @@ Para crear una base de datos en AWS, escribimos RDS en el buscador. quí dentro 
 
 ![image](https://github.com/user-attachments/assets/4a4d6450-c04b-43f9-8637-6af73267ace7)
 
-asd
+Ahora elegiremos la capa estándar de MySQL.
+
+
+![Captura de pantalla 2025-02-19 124041](https://github.com/user-attachments/assets/e38cc97b-8b10-4848-bc4f-dba02c06967c)
+
 ## Implementación de EFS
 
 ## Instalación de Wordpress
