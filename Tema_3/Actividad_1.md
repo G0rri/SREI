@@ -177,4 +177,39 @@ Hay que diriguirse a VPC y añadir una nueva regla de entrada.
 
 ![image](https://github.com/user-attachments/assets/11074ee4-efd6-47a5-9452-412d11d3871d)
 
+Aquí ponemos el protocolo NFS que sea conectable a través de la VPC.
+
+![image](https://github.com/user-attachments/assets/6c09e283-fff6-4c26-9674-cbac77e5a275)
+
+En EFS, en la sección de red vamos a cambiar la VPC por la nuestra.
+
+![image](https://github.com/user-attachments/assets/9b59e086-3519-4a87-b22c-b2345bc6e493)
+
+Ahora vamos a asociarla con la maquina de ubuntu.
+
+![image](https://github.com/user-attachments/assets/9170f824-0160-4422-84b1-abe49c6e996f)
+
+Le damos a asociar mediante IP, seleccionamos la subred que hayamos puesto en nuestra VPC, en este caso da igual cual sea. Copiamos el código ese y lo pegamos en la máquina.
+
+![image](https://github.com/user-attachments/assets/5820308b-87a8-4911-813e-4fdf4ef61685)
+
+Primero debemos de instalar NFS con este comando.
+```
+sudo apt install nfs-common
+```
+
+![image](https://github.com/user-attachments/assets/54f6b582-39ba-421d-870e-e2f26e53f81a)
+
+Ahora ejecutamos el comando que nos decía EFS y listo
+```
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport 10.2.0.69:/ efs
+```
+
+![image](https://github.com/user-attachments/assets/d82374bb-0de0-4e85-97f8-c8a9c6b08d68)
+
+Si salta este error: mount.nfs4: mount point efs does not exist hay que crear el directorio efs:
+```
+sudo mkdir -p efs
+```
+
 ## Instalación de Wordpress
