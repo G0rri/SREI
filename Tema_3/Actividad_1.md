@@ -43,6 +43,10 @@ asd
 
 ![image](https://github.com/user-attachments/assets/0daab50c-0523-4d21-a9e1-14c2ee7fd110)
 
+asd
+
+![image](https://github.com/user-attachments/assets/fde51ff0-aff2-4724-bdbd-3ef78db7e924)
+
 ## Instalación de Apache y PHP
 
 ## Creación de la base de datos
