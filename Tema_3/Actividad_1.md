@@ -230,3 +230,26 @@ Ahora necesitamos un cliente de MySQL ya que necesitamos crear una base de datos
 sudo apt install mysql-client -y
 ```
 ![image](https://github.com/user-attachments/assets/c20875c1-f1fb-446e-a1ec-f9f910595864)
+
+Y entramos en MySQL:
+```
+mysql -h bdwordpress.chn38fhjqphr.us-east-1.rds.amazonaws.com -u admin -p
+```
+![image](https://github.com/user-attachments/assets/360cc13f-1360-4df5-9170-5eacaf1c8af0)
+
+Creamos la base de datos:
+```
+CREATE DATABASE wordpress;
+CREATE USER 'wordpress_user'@'%' IDENTIFIED BY 'password123';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress_user'@'%';
+FLUSH PRIVILEGES;
+```
+![image](https://github.com/user-attachments/assets/b920cd54-e78b-4e4e-bad0-790fb8d23364)
+
+Ahora entramos en la DNS pública de nuestra máquina desde el navegador y en nuestra IP ponemos wordpress.
+
+![image](https://github.com/user-attachments/assets/a840e35b-1403-4940-83d1-4443ac631dbb)
+
+Y seguimos con los formularios siguientes.
+
+![image](https://github.com/user-attachments/assets/7a9e6c03-804d-4c4d-8194-12ad3e44ab45)
