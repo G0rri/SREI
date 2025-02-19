@@ -1,5 +1,5 @@
 ## Creación de VPC
-asd
+Lo primero será crear una VPC (Virtual Private Cloud), para ello buscamos VPC y le damos a donde pone crear.
 
 ![image](https://github.com/user-attachments/assets/98199e9b-89bc-4393-8c51-62b3a33e8249)
 
