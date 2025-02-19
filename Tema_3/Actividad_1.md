@@ -19,7 +19,17 @@ asd
 
 ![image](https://github.com/user-attachments/assets/a3edd080-7842-48ef-843c-c7deaf818ca4)
 
-## Creación de EC2
+## Creación de EC2 y Firewall
+asd
+
+![image](https://github.com/user-attachments/assets/0e13c838-eefb-4d3a-aa10-c6d374c0431e)
+
+asd
+
+![image](https://github.com/user-attachments/assets/d22e1f2e-7910-408a-ab59-66ce32794a54)
+
+asd
+
 
 ## Instalación de Apache y PHP
 
