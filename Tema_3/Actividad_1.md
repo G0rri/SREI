@@ -116,6 +116,18 @@ Le ponemos un nombre a la base de datos y un usuario con su respectiva contrase�
 
 ![image](https://github.com/user-attachments/assets/e5e4d78c-c763-4cff-9b93-6672364d49e7)
 
+En la configuración de la instancia y de el almacenamiento, lo dejamos tal y como viene.
+
+![image](https://github.com/user-attachments/assets/17ebcf51-4d9d-4593-87bc-d8737ba7b26d)
+
+En la parte de conectividad, seguimos la foto de a continuación.
+
+![image](https://github.com/user-attachments/assets/005573b1-29d5-4534-826d-a43364a3b6f7)
+
+Y por último, en configuración adicional, debemos de poner el nombre de la base de datos.
+
+![image](https://github.com/user-attachments/assets/e8deb547-7a1f-42e8-9690-120b93d59e4f)
+
 ## Implementación de EFS
 
 ## Instalación de Wordpress
