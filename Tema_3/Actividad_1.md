@@ -41,6 +41,7 @@ asd
 
 asd
 
+![image](https://github.com/user-attachments/assets/0daab50c-0523-4d21-a9e1-14c2ee7fd110)
 
 ## Instalación de Apache y PHP
 
