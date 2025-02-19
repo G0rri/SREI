@@ -1,27 +1,26 @@
 ## Creación de VPC
+
 Lo primero será crear una VPC (Virtual Private Cloud), para ello buscamos VPC y le damos a donde pone crear.
 
 ![image](https://github.com/user-attachments/assets/98199e9b-89bc-4393-8c51-62b3a33e8249)
 
-asd
+A continuación empezamos con la creación de la VPC y más. Le asignamos un nombre, y que el bloque del CIDR IPv4 sea 10.2.0.0/16. Por el resto seguimos como en la imagen.
 
 ![image](https://github.com/user-attachments/assets/c61bc710-b12f-4bb5-958e-ecb8d33aceb1)
 
-asd
+Ahora debemos especificar en cada subred el tamaño e IP que queremos, para el resto lo dejamos como en la imagen.
 
 ![image](https://github.com/user-attachments/assets/9a7e380e-1716-4bd5-9228-bc0c4ce8aba2)
 
-asd
+Esperamos a que implemente y cree todo lo que le acabamos de especificar.
 
 ![image](https://github.com/user-attachments/assets/8750de95-0d45-4c03-b4b9-afb36ee6c856)
 
-asd
+Y como vemos nos saldrá algo así.
 
 ![image](https://github.com/user-attachments/assets/a3edd080-7842-48ef-843c-c7deaf818ca4)
 
 ## Creación de EC2 y Firewall
-asd
-
 
 asd
 
