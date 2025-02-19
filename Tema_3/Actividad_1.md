@@ -165,4 +165,16 @@ Para crear el sistema de almacenamiento Elastic File System, buscamos EFS en el 
 
 ![image](https://github.com/user-attachments/assets/42993879-fa48-43ee-be4c-4b0c0db7f219)
 
+Aquí dentro le damos un nombre y elegimos la VPC creada anteriormenete.
+
+![image](https://github.com/user-attachments/assets/b77fb185-ddfb-4a8d-b3f5-38fd3cf84636)
+
+Comprobamos que se ha creado con éxito.
+
+![image](https://github.com/user-attachments/assets/10e2f15c-1dfe-46c3-adfd-8ef66da1c367)
+
+Hay que diriguirse a VPC y añadir una nueva regla de entrada.
+
+![image](https://github.com/user-attachments/assets/11074ee4-efd6-47a5-9452-412d11d3871d)
+
 ## Instalación de Wordpress
