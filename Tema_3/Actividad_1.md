@@ -152,6 +152,13 @@ Y listo
 
 ![image](https://github.com/user-attachments/assets/1d9d33c2-5f5c-4a8e-b572-f2234aa61bd9)
 
+Para comprobar si funciona usamos este comando:
+```
+mysql -h puerto_de_enlace_BD -u admin -p
+```
+
+![image](https://github.com/user-attachments/assets/58a2cf02-1659-4aa0-972b-e4dd3fc6a1e8)
+
 ## Implementación de EFS
 
 Para crear el sistema de almacenamiento Elastic File System
