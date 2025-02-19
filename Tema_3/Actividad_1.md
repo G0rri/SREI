@@ -22,11 +22,22 @@ asd
 ## Creación de EC2 y Firewall
 asd
 
+
+asd
+
 ![image](https://github.com/user-attachments/assets/0e13c838-eefb-4d3a-aa10-c6d374c0431e)
 
 asd
 
 ![image](https://github.com/user-attachments/assets/d22e1f2e-7910-408a-ab59-66ce32794a54)
+
+asd
+
+![image](https://github.com/user-attachments/assets/a9caa5f8-4f3d-4151-955b-e0da71ce66d1)
+
+asd
+
+![image](https://github.com/user-attachments/assets/db997402-31e8-41c1-9549-984de9725430)
 
 asd
 
