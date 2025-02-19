@@ -161,6 +161,8 @@ mysql -h puerto_de_enlace_BD -u admin -p
 
 ## Implementación de EFS
 
-Para crear el sistema de almacenamiento Elastic File System
+Para crear el sistema de almacenamiento Elastic File System, buscamos EFS en el buscador y le damos a sistemas de archivo, aquí dentro le damos a crear.
+
+![image](https://github.com/user-attachments/assets/42993879-fa48-43ee-be4c-4b0c0db7f219)
 
 ## Instalación de Wordpress
