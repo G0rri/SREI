@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0daffc98-c6f7-4834-b27d-3229e229b06b)## Creación de VPC
+## Creación de VPC
 Lo primero será crear una VPC (Virtual Private Cloud), para ello buscamos VPC y le damos a donde pone crear.
 
 ![image](https://github.com/user-attachments/assets/98199e9b-89bc-4393-8c51-62b3a33e8249)
@@ -64,6 +64,10 @@ sudo systemctl start apache2
 sudo systemctl enable apache2
 ```
 ![image](https://github.com/user-attachments/assets/2f3fb676-1db4-45ce-aaab-c537c123c779)
+
+Para comprobarlo, en un navegador ponemos la IP pública de la instancia.
+
+![image](https://github.com/user-attachments/assets/0e529fcc-ac2f-4b76-bc09-9844a62921ef)
 
 ## Creación de la base de datos
 
