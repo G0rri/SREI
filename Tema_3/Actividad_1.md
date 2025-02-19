@@ -96,7 +96,7 @@ Y comprobamos:
 ```
 php -v
 ```
-![image](https://github.com/user-attachments/assets/1a8b76bc-a9df-41b4-9d49-30664cff59b5)
+![image](https://github.com/user-attachments/assets/162d5a2d-18a2-4f1b-9b92-9255444af903)
 
 ## Creación de la base de datos
 
