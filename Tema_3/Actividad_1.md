@@ -218,8 +218,6 @@ Para instalar Wordpress hay que descargarselo desde su página oficial.
 ```
 sudo wget http://wordpress.org/latest.tar.gz
 ```
-![image](https://github.com/user-attachments/assets/03857354-163b-43af-b40a-a288adf91b69)
-
 Descomprimir el archivo:
 ```
 sudo tar -xf latest.tar.gz
