@@ -33,11 +33,11 @@ asd
 
 asd
 
-![image](https://github.com/user-attachments/assets/a9caa5f8-4f3d-4151-955b-e0da71ce66d1)
+![image](https://github.com/user-attachments/assets/00c9023d-512f-4309-bfce-372c226f5d42)
 
 asd
 
-![image](https://github.com/user-attachments/assets/db997402-31e8-41c1-9549-984de9725430)
+![image](https://github.com/user-attachments/assets/6c1985ae-4186-42eb-81c0-e2b7b0f751fd)
 
 asd
 
