@@ -136,6 +136,18 @@ Y listo
 
 ![image](https://github.com/user-attachments/assets/4769f57e-d667-4e21-9dc8-d76e52b24fca)
 
+Ahora debemos de configurarla en un EC2, y para ello seguimos esta imagen.
+
+![image](https://github.com/user-attachments/assets/996f0c93-433a-4860-a4bd-376ee981b5b7)
+
+Elegimos nuestra EC2 creada anteriormente.
+
+![image](https://github.com/user-attachments/assets/b2ac868a-01a6-45a9-b912-544b9a17d649)
+
+Y le damos a configurar.
+
+![image](https://github.com/user-attachments/assets/83f09027-0f9a-4e96-8061-bcd13632bef3)
+
 ## Implementación de EFS
 
 ## Instalación de Wordpress
