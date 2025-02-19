@@ -252,4 +252,4 @@ Ahora entramos en la DNS pública de nuestra máquina desde el navegador y en nu
 
 Y seguimos con los formularios siguientes.
 
-![image](https://github.com/user-attachments/assets/7a9e6c03-804d-4c4d-8194-12ad3e44ab45)
+![image](https://github.com/user-attachments/assets/ccb57742-d4f7-4f7e-bdde-8e2683505e38)
