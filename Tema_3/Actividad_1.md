@@ -22,27 +22,27 @@ Y como vemos nos saldrá algo así.
 
 ## Creación de EC2 y Firewall
 
-asd
+Ahora debemos de crear una instancia con su respectivo firewall. Para ello buscamos EC2 y le damos a donde pone lanzar instancia.
 
 ![image](https://github.com/user-attachments/assets/0e13c838-eefb-4d3a-aa10-c6d374c0431e)
 
-asd
+A continuación, le ponemos un nombre, elegimos el sistema operativo que deseemos, en este caso será ubuntu.
 
 ![image](https://github.com/user-attachments/assets/d22e1f2e-7910-408a-ab59-66ce32794a54)
 
-asd
+En las claves, usamos vockey, y en configuración de red usaremos la VPC que hemos creado anteriormente. Ahora en grupos de seguridad, creamos uno con el nombre que queramos y le añadimos una regla de entrada más.
 
 ![image](https://github.com/user-attachments/assets/00c9023d-512f-4309-bfce-372c226f5d42)
 
-asd
+Esa regla de entrada es con http desde cualquier parte, y le dmos a lanzar instancia.
 
 ![image](https://github.com/user-attachments/assets/6c1985ae-4186-42eb-81c0-e2b7b0f751fd)
 
-asd
+Una vez lanzada deberá aparecer en instancias la que acabamos de crear.
 
 ![image](https://github.com/user-attachments/assets/0daab50c-0523-4d21-a9e1-14c2ee7fd110)
 
-asd
+Para comprobar que se ha realizado correctamente, nos intentamos conectar a este en mi caso a través de PuTTy.
 
 ![image](https://github.com/user-attachments/assets/fde51ff0-aff2-4724-bdbd-3ef78db7e924)
 
