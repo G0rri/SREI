@@ -68,6 +68,36 @@ Para comprobarlo, en un navegador ponemos la IP pública de la instancia.
 
 ![image](https://github.com/user-attachments/assets/0e529fcc-ac2f-4b76-bc09-9844a62921ef)
 
+Ahora vamos con la instalación de PHP. Primero debemos de añadir el repositorio:
+```
+sudo add-apt-repository ppa:ondrej/php
+```
+![image](https://github.com/user-attachments/assets/35ac513c-29bc-4fb6-a90d-6d3deed96e38)
+
+Y comenzamos con la instalación:
+```
+sudo apt install php7.4 libapache2-mod-php7.4 php7.4-cli
+```
+![image](https://github.com/user-attachments/assets/0ab137c2-cfc6-41dc-a3bc-762954a0bb85)
+
+También debemos de instalar Mysql aparte:
+```
+sudo apt install php7.4-mysql
+```
+![image](https://github.com/user-attachments/assets/e2607e14-f85b-4364-ba2b-149c7ee4e040)
+
+Reiniciamos apache:
+```
+sudo systemctl restart apache2
+```
+![image](https://github.com/user-attachments/assets/ec1d492d-9ba7-434d-ac97-25083a9cf252)
+
+Y comprobamos:
+```
+php -v
+```
+![image](https://github.com/user-attachments/assets/1a8b76bc-a9df-41b4-9d49-30664cff59b5)
+
 ## Creación de la base de datos
 
 ## Implementación de EFS
