@@ -258,27 +258,12 @@ Y seguimos con los formularios siguientes.
 
 ![image](https://github.com/user-attachments/assets/b1a8becf-02f5-4611-86ba-8a1e6ee60984)
 
-asd
-
-asd
-
 ![image](https://github.com/user-attachments/assets/b56ac800-ce61-4522-ba17-c59016c8c7d7)
-
-asd
-
-
-asd
 
 ![image](https://github.com/user-attachments/assets/790ac019-1de0-43f1-b0d7-5fb4433e2916)
 
-asd
-
 ![image](https://github.com/user-attachments/assets/a2bcb3c3-afd6-4ab9-9a7d-6e846a8c792e)
 
-asd
-
 ![image](https://github.com/user-attachments/assets/e665aa0e-4951-4c3e-86bc-6e9e5991a2f7)
-
-asd
 
 ![image](https://github.com/user-attachments/assets/0aff3a2b-4ae9-4e30-90e4-9115ae968f40)
