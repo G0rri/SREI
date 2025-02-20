@@ -267,7 +267,3 @@ Y seguimos con los formularios siguientes.
 ![image](https://github.com/user-attachments/assets/e665aa0e-4951-4c3e-86bc-6e9e5991a2f7)
 
 ![image](https://github.com/user-attachments/assets/0aff3a2b-4ae9-4e30-90e4-9115ae968f40)
-
-Ahora hay que vincular EFS con Wordpress, y para ello primero debemos de parar apache para no tener ninguna incompatibilidad.
-
-![image](https://github.com/user-attachments/assets/5048ef4c-6135-484c-a44e-f026a234103e)
