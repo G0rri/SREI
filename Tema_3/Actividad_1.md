@@ -246,6 +246,10 @@ FLUSH PRIVILEGES;
 ```
 ![image](https://github.com/user-attachments/assets/b920cd54-e78b-4e4e-bad0-790fb8d23364)
 
+Y seguimos con el formulario:
+
+![image](https://github.com/user-attachments/assets/4cae4962-22f8-4727-b4a5-56efe99cf815)
+
 Ahora entramos en la DNS pública de nuestra máquina desde el navegador y en nuestra IP ponemos wordpress.
 
 ![image](https://github.com/user-attachments/assets/a840e35b-1403-4940-83d1-4443ac631dbb)
@@ -254,10 +258,7 @@ Y seguimos con los formularios siguientes.
 
 ![image](https://github.com/user-attachments/assets/b1a8becf-02f5-4611-86ba-8a1e6ee60984)
 
-Y seguimos con el formulario:
 
-a
-![image](https://github.com/user-attachments/assets/4cae4962-22f8-4727-b4a5-56efe99cf815)
 
 asd
 
