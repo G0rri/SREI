@@ -256,8 +256,6 @@ Y seguimos con los formularios siguientes.
 
 Y seguimos con el formulario:
 
-![image](https://github.com/user-attachments/assets/6e0fdb71-17a1-4f12-8eed-ccedab9b9682)
-
 a
 ![image](https://github.com/user-attachments/assets/4cae4962-22f8-4727-b4a5-56efe99cf815)
 
@@ -271,7 +269,6 @@ asd
 
 asd
 
-![image](https://github.com/user-attachments/assets/4292961d-4c6b-4b41-8ff1-bd1c0c02d1bb)
 
 asd
 
