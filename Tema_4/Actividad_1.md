@@ -20,3 +20,27 @@ asd
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 ```
 ![image](https://github.com/user-attachments/assets/ada6cdf0-8422-4c1a-a708-14195dc36c19)
+
+asd
+```
+sudo apt update $$ sudo apt upgrade
+```
+![image](https://github.com/user-attachments/assets/fbe7b7b2-7b67-44fb-b51d-8dd6bcd4b88e)
+
+asd
+```
+apt-cache policy docker-ce
+```
+![image](https://github.com/user-attachments/assets/28946553-4e70-407e-8c50-65cc6df6c57e)
+
+asd
+```
+sudo apt install docker-ce
+```
+![image](https://github.com/user-attachments/assets/82cfb995-c4df-4441-b766-39f292f08c57)
+
+asd
+```
+sudo systemctl status docker
+```
+![image](https://github.com/user-attachments/assets/d41892c9-8993-4ef8-9f97-2c31882b588f)
