@@ -2,17 +2,21 @@
 
 asd
 ```
- sudo apt-get update
- sudo apt-get install ca-certificates curl gnupg
+ sudo apt update
+ sudo apt install apt-transport-https ca-certificates curl software-properties-common
 ```
 ![image](https://github.com/user-attachments/assets/91e4d404-494a-4a1d-a75f-33faed990474)
 
-![image](https://github.com/user-attachments/assets/e5da1ea2-83d6-4154-ad01-9a48af4fda66)
+![image](https://github.com/user-attachments/assets/cad553ad-24b8-4d57-86b9-6d44e858fbcc)
 
 asd
 ```
- sudo install -m 0755 -d /etc/apt/keyrings
- curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
- sudo chmod a+r /etc/apt/keyrings/docker.gpg
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
-![image](https://github.com/user-attachments/assets/c9ff57fc-e8a7-4acc-bcaf-18b2c9605579)
+![image](https://github.com/user-attachments/assets/19691a2d-5c05-47a8-bd9a-f535c30644fc)
+
+asd
+```
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+```
+![image](https://github.com/user-attachments/assets/ada6cdf0-8422-4c1a-a708-14195dc36c19)
