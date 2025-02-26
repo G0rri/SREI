@@ -44,3 +44,11 @@ asd
 sudo systemctl status docker
 ```
 ![image](https://github.com/user-attachments/assets/d41892c9-8993-4ef8-9f97-2c31882b588f)
+
+asd
+```
+sudo usermod -aG docker $USER
+su - $USER
+docker --version
+```
+![image](https://github.com/user-attachments/assets/1deb8d02-fcd9-449c-b747-3661d606ed3a)
