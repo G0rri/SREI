@@ -52,3 +52,17 @@ su - $USER
 docker --version
 ```
 ![image](https://github.com/user-attachments/assets/1deb8d02-fcd9-449c-b747-3661d606ed3a)
+
+## Tarea 2
+
+asd
+```
+sudo docker run hello-world
+```
+![image](https://github.com/user-attachments/assets/fc23319e-fed9-459e-9ec3-e7793eea117d)
+
+asd
+```
+sudo docker ps -a
+```
+![image](https://github.com/user-attachments/assets/176007a2-c2fa-485e-85bd-bd3dd8b68032)
