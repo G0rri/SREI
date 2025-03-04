@@ -89,3 +89,19 @@ CMD ["node", "src/index.js"]
 EXPOSE 3000
 ```
 ![image](https://github.com/user-attachments/assets/a04e7874-0d96-4058-94d2-44fb8c883578)
+
+asd
+```
+docker build -t getting-started .
+```
+![image](https://github.com/user-attachments/assets/14b06930-da75-4f01-9137-f9f79baa19f4)
+
+asd
+```
+docker run -d -p 127.0.0.1:3000:3000 getting-started
+```
+![image](https://github.com/user-attachments/assets/e18bfb27-b9ed-4373-b182-731dab65922b)
+
+asd
+
+![image](https://github.com/user-attachments/assets/e6034e7d-6ed2-4227-a5a9-da8b6f57b962)
