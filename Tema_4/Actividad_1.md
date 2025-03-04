@@ -66,3 +66,9 @@ asd
 sudo docker ps -a
 ```
 ![image](https://github.com/user-attachments/assets/176007a2-c2fa-485e-85bd-bd3dd8b68032)
+
+asd
+```
+sudo docker images
+```
+![image](https://github.com/user-attachments/assets/3823c721-91f0-4358-b95d-99f79c3c26ab)
