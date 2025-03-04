@@ -72,3 +72,20 @@ asd
 sudo docker images
 ```
 ![image](https://github.com/user-attachments/assets/3823c721-91f0-4358-b95d-99f79c3c26ab)
+
+asd
+```
+git clone https://github.com/docker/getting-started-app.git
+```
+![image](https://github.com/user-attachments/assets/b15c84d6-2ce2-4fb9-be96-41eb7a1e6549)
+
+asd
+```
+FROM node:lts-alpine
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "src/index.js"]
+EXPOSE 3000
+```
+![image](https://github.com/user-attachments/assets/a04e7874-0d96-4058-94d2-44fb8c883578)
