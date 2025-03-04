@@ -105,3 +105,9 @@ docker run -d -p 127.0.0.1:3000:3000 getting-started
 asd
 
 ![image](https://github.com/user-attachments/assets/e6034e7d-6ed2-4227-a5a9-da8b6f57b962)
+
+asd
+```
+sudo docker login -u <usuario>
+```
+![image](https://github.com/user-attachments/assets/e7e9d75b-ac1e-4833-a89e-9ac22f5885a7)
