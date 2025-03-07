@@ -24,7 +24,7 @@ Actividadades | Descripción
 
 # Trimestre 2
 
-## Tema 2
+## Tema 2 - DNS
 
 Actividadades | Descripción
 ---------- | ----------
