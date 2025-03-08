@@ -46,11 +46,20 @@ sudo docker ps -a
 
 ## Ejecuta un contenedor hello-world y dale nombre “myhello2”
 
-asd
+Ahora lo mismo pero cambiando el nombre:
 ```
+sudo docker run --name myhello2 hello-world
+```
+![imagen](https://github.com/user-attachments/assets/b706dcda-7a59-4268-add7-945fef4708a0)
 
-```
 ## Ejecuta un contenedor hello-world y dale nombre “myhello3”
+
+Aquí igual que en el anterior:
+```
+sudo docker run --name myhello3 hello-world
+```
+![imagen](https://github.com/user-attachments/assets/14f4d0d8-5574-4b9a-9cd4-52102083eeda)
+
 ## Muestra los contenedores que se están ejecutando
 ## Para el contenedor "myhello1”
 ## Para el contenedor "myhello2”
