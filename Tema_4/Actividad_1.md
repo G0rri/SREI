@@ -23,9 +23,9 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 Volvemos a actualizar los repositorios y los actualizamos:
 ```
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
 ```
-![image](https://github.com/user-attachments/assets/fbe7b7b2-7b67-44fb-b51d-8dd6bcd4b88e)
+![imagen](https://github.com/user-attachments/assets/eeff7e67-c81b-41c7-b0b5-779ed9d18939)
 
 Descargamos las politicas de docker:
 ```
