@@ -56,3 +56,15 @@ Ahora debemos de crear una cuenta en hub.docker.com, no voy a hacer fotos de eso
 sudo docker login -u <usuario>
 ```
 ![image](https://github.com/user-attachments/assets/e7e9d75b-ac1e-4833-a89e-9ac22f5885a7)
+
+Ahora para subir la imagen, debemos primero asociarla a nuestra cuenta:
+```
+sudo docker tag mi-imagen tu-usuario/mi-imagen:latest
+```
+![imagen](https://github.com/user-attachments/assets/48e1e6e2-cba2-4235-a6cb-5e1c2127b376)
+
+Ahora publicamos la imagen en nuestra cuenta tal que así:
+```
+sudo docker push tu-usuario/mi-imagen:latest
+```
+![imagen](https://github.com/user-attachments/assets/4316ca83-3325-4892-8f5e-2b1aa48738eb)
