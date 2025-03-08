@@ -51,7 +51,7 @@ Ahora en cualquier ordenador si escribimos esta dirección, podremos ver nuestra
 
 ![image](https://github.com/user-attachments/assets/e6034e7d-6ed2-4227-a5a9-da8b6f57b962)
 
-Ahora debemos de crear una cuenta en hub.docker.com, no voy a hacer fotos de eso porque es registrarse con un correo y una contraseña, no tiene más misterio.- Una vez creado, debemos de logearnos dentro de nuestra máquina ubuntu en este caso.
+Ahora debemos de crear una cuenta en hub.docker.com, no voy a hacer fotos de eso porque es registrarse con un correo y una contraseña, no tiene más misterio. Una vez creado, debemos de logearnos dentro de nuestra máquina ubuntu en este caso.
 ```
 sudo docker login -u <usuario>
 ```
