@@ -43,7 +43,7 @@ sudo docker build -t getting-started .
 
 Ahora ejecutamos la app en el puerto :3000:
 ```
-docker run -d -p 127.0.0.1:3000:3000 getting-started
+sudo docker run -d -p 127.0.0.1:3000:3000 getting-started
 ```
 ![image](https://github.com/user-attachments/assets/e18bfb27-b9ed-4373-b182-731dab65922b)
 
