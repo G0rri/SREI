@@ -68,3 +68,7 @@ Ahora publicamos la imagen en nuestra cuenta tal que así:
 sudo docker push tu-usuario/mi-imagen:latest
 ```
 ![imagen](https://github.com/user-attachments/assets/4316ca83-3325-4892-8f5e-2b1aa48738eb)
+
+Ahora si nos vamos a la página de docker iniciamos sesión y nos vamos a nuestro perfil, en la sección de repositorios, veremos que hay una imagen subida  que coincide con el id de la imagen que acabamos de publicar a través de ubuntu.
+
+![imagen](https://github.com/user-attachments/assets/649c732d-85d2-434c-a34d-d601366b2a4d)
