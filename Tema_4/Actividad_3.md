@@ -23,6 +23,13 @@ sudo docker pull nginx
 ![imagen](https://github.com/user-attachments/assets/b3d39a5c-5825-47b3-8e8d-ab9133d50af1)
 
 ## Muestra un listado de todas la imágenes
+
+Para ver todas las imagenes, es tan facil como ejecutar este comando:
+```
+sudo docker images
+```
+![imagen](https://github.com/user-attachments/assets/ebcafd47-9bde-4565-9ffd-6439fd699aff)
+
 ## Ejecuta un contenedor hello-world y dale nombre “myhello1”
 ## Ejecuta un contenedor hello-world y dale nombre “myhello2”
 ## Ejecuta un contenedor hello-world y dale nombre “myhello3”
