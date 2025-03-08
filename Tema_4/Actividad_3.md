@@ -1,4 +1,4 @@
-## Descarga la imagen de ubuntu
+![imagen](https://github.com/user-attachments/assets/7b3e9f82-8922-46ca-b0f8-87acad644f64)## Descarga la imagen de ubuntu
 
 Para descargar una imagen utilizamos el comando pull y el nombre de la imagen a descargar.
 ```
@@ -69,7 +69,42 @@ sudo docker ps
 ![imagen](https://github.com/user-attachments/assets/2fb33a25-85bb-4aa6-8fbd-7eb54242fcf5)
 
 ## Para el contenedor "myhello1”
+
+Para parar un contenedor usamos stop y el nombre.
+```
+sudo docker stop myhello1
+```
+![imagen](https://github.com/user-attachments/assets/ecdc4dd5-11da-40e6-a8d1-7a8b5d140114)
+
 ## Para el contenedor "myhello2”
+
+Lo mismo que en el anterior.
+```
+sudo docker stop myhello2
+```
+![imagen](https://github.com/user-attachments/assets/cadb350a-231d-41a5-aa49-190fc5042e1c)
+
 ## Borra el contenedor “myhello1”
+
+Para borrarlo es como en los archivos, usamos rm.
+```
+docker rm myhello1
+```
+![imagen](https://github.com/user-attachments/assets/34e94932-1a0a-4d2f-a0b7-79552b190ef9)
+
+Para ver si ha surtido efecto, volvemos a ver todos los contenedores. Y como vemos en la imagen falta el que acabamos de eliminar:
+![imagen](https://github.com/user-attachments/assets/290da5a5-5190-40ac-abe7-630bf6367e50)
+
 ## Muestra los contenedores que se están ejecutando.
+
+Para mostrar todos los contenedores en ejecución usamos ps.
+```
+sudo docker ps
+```
+
 ## Borra todos los contenedores
+
+Para eliminar todos los contenedores, primero deberemos de parar todos, y para eso usamos:
+```
+docker stop $(docker ps -q)
+```
