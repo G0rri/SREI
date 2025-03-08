@@ -1,6 +1,6 @@
 ## Descarga la imagen de ubuntu
 
-asd
+Para descargar una imagen utilizamos el comando pull y el nombre de la imagen a descargar.
 ```
 sudo docker pull ubuntu
 ```
@@ -16,7 +16,7 @@ sudo docker pull hello-world
 
 ## Descarga la imagen nginx
 
-asd
+Igual que en el primero, realizamos este ajuste en el comando y listo:
 ```
 sudo docker pull nginx
 ```
