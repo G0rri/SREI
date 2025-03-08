@@ -62,9 +62,9 @@ sudo docker run --name myhello3 hello-world
 
 ## Muestra los contenedores que se están ejecutando
 
-Para mostrar todos los contenedores usamos ps, pero como no están en ejecución le añadimos -a.
+Para mostrar todos los contenedores en ejecución usamos ps.
 ```
-sudo docker ps -a
+sudo docker ps
 ```
 ![imagen](https://github.com/user-attachments/assets/2fb33a25-85bb-4aa6-8fbd-7eb54242fcf5)
 
