@@ -101,6 +101,7 @@ Para mostrar todos los contenedores en ejecución usamos ps.
 ```
 sudo docker ps
 ```
+![imagen](https://github.com/user-attachments/assets/3a2298dd-554c-43ef-a6e0-d64608413428)
 
 ## Borra todos los contenedores
 
@@ -108,3 +109,12 @@ Para eliminar todos los contenedores, primero deberemos de parar todos, y para e
 ```
 docker stop $(docker ps -q)
 ```
+![imagen](https://github.com/user-attachments/assets/3b8218fe-8ca6-4dea-b112-d6388ae00ca7)
+
+Y ahora procedemos a eliminar todos los contenedores con:
+```
+sudo docker rm $(docker ps -a -q)
+```
+![imagen](https://github.com/user-attachments/assets/69f60a4c-b1ad-4d41-9ee9-d15eb6c5109e)
+
+Como vemos en la comprobación, todos y cada uno han sido eliminados.
