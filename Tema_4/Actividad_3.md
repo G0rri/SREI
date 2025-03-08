@@ -61,6 +61,13 @@ sudo docker run --name myhello3 hello-world
 ![imagen](https://github.com/user-attachments/assets/14f4d0d8-5574-4b9a-9cd4-52102083eeda)
 
 ## Muestra los contenedores que se están ejecutando
+
+Para mostrar todos los contenedores usamos ps, pero como no están en ejecución le añadimos -a.
+```
+sudo docker ps -a
+```
+![imagen](https://github.com/user-attachments/assets/2fb33a25-85bb-4aa6-8fbd-7eb54242fcf5)
+
 ## Para el contenedor "myhello1”
 ## Para el contenedor "myhello2”
 ## Borra el contenedor “myhello1”
