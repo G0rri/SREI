@@ -31,7 +31,25 @@ sudo docker images
 ![imagen](https://github.com/user-attachments/assets/ebcafd47-9bde-4565-9ffd-6439fd699aff)
 
 ## Ejecuta un contenedor hello-world y dale nombre “myhello1”
+
+Para ejecutar el contenedor hello-world con un seudónimo, usamos este comando:
+```
+sudo docker run --name myhello1 hello-world
+```
+![imagen](https://github.com/user-attachments/assets/484f2c39-da30-4b39-bc2d-6cdd9863e79c)
+
+Y comprobamos que se haya hecho correctamente:
+```
+sudo docker ps -a
+```
+![imagen](https://github.com/user-attachments/assets/30ea18ad-9551-449f-82a0-f686125e2038)
+
 ## Ejecuta un contenedor hello-world y dale nombre “myhello2”
+
+asd
+```
+
+```
 ## Ejecuta un contenedor hello-world y dale nombre “myhello3”
 ## Muestra los contenedores que se están ejecutando
 ## Para el contenedor "myhello1”
