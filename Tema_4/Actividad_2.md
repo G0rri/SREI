@@ -37,7 +37,7 @@ EXPOSE 3000
 
 Ahora construimos esa app:
 ```
-docker build -t getting-started .
+sudo docker build -t getting-started .
 ```
 ![image](https://github.com/user-attachments/assets/14b06930-da75-4f01-9137-f9f79baa19f4)
 
