@@ -168,7 +168,4 @@ sudo docker run -d -p 80:3000 --name ejemplo2 josedom24/ejemplo3:v1
 
 Y ahora lo comprobamos:
 
-asd
-```
-
-```
+No se por qué me está fallando, parece algún problema con pip3 junto a requirements.txt.
