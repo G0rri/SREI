@@ -1,4 +1,3 @@
-# Ejemplo 1
 ## Volúmenes docker
 
 Los volúmenes Docker permiten almacenar datos fuera de los contenedores en un directorio gestionado por Docker. Se encuentran en /var/lib/docker/volumes en sistemas Linux y son ideales para:
@@ -84,7 +83,6 @@ sudo docker rm -f contenedor2
 
 Y como vemos en la imagen los datos se siguen guardando.
 
-# Ejemplo 2
 ## Asociando almacenamiento a los contenedores: volúmenes Docker
 
 Lo primero es crear un volumen, para ello:
@@ -126,7 +124,6 @@ sudo curl http://localhost:8080
 ![imagen](https://github.com/user-attachments/assets/57e19c68-8b84-40a4-9746-ea7241465cab)
 Y listo, se ha vuelto a asociar otro volumen perfectamente.
 
-# Ejemplo 3
 ## Asociando almacenamiento a los contenedores: bind mount
 
 Ahora vamos a algo similar al anterior ejemplo pero con bind mount. Así que lo primero que debemos de hacer es crear un directorio para centralizar el trabajo. Y una vez hecho crearemos un html para mostrar algo:
@@ -163,3 +160,44 @@ sudo curl http://localhost:8080
 ![imagen](https://github.com/user-attachments/assets/b016a234-e258-4a76-8104-86169b5b4dff)
 
 Y listo.
+
+# Ejemplo 1
+## Despliegue de la aplicación Guestbook
+asd
+```
+sudo docker network create red_guestbook
+sudo docker run -d --name redis --network red_guestbook -v /opt/redis:/data redis redis-server --appendonly yes
+sudo docker run -d -p 80:5000 --name guestbook --network red_guestbook iesgn/guestbook
+```
+![imagen](https://github.com/user-attachments/assets/70a6ad9c-6813-46c2-a406-ebe888c216a8)
+
+Lo comprobamos:
+```
+localhost
+```
+![imagen](https://github.com/user-attachments/assets/bef29c9b-55d4-4a3c-8767-3b2b0970721d)
+
+## Configuración de la aplicación guestbook
+
+asd
+```
+sudo docker run -d --name temperaturas-api --network red_temperaturas iesgn/temperaturas_backend
+sudo docker run -d -p 80:3000 --name temperaturas-frontend -e TEMP_SERVER=temperaturas-api:5000 --network red_temperaturas iesgn/temperaturas_frontend
+```
+![imagen](https://github.com/user-attachments/assets/1a4bd040-31fe-483d-9a81-31b88f9ddf80)
+
+# Ejemplo 2
+asd
+```
+
+```
+
+asd
+```
+
+```
+
+asd
+```
+
+```
