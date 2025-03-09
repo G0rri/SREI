@@ -163,7 +163,8 @@ Y listo.
 
 # Ejemplo 1
 ## Despliegue de la aplicación Guestbook
-asd
+
+Primero creamos una red llamada red_guestbook. Luego creamos un contenedor y lo asociamos a esta red. Y por último para poder visualizarla le añadimos un puerto.
 ```
 sudo docker network create red_guestbook
 sudo docker run -d --name redis --network red_guestbook -v /opt/redis:/data redis redis-server --appendonly yes
@@ -179,25 +180,68 @@ localhost
 
 ## Configuración de la aplicación guestbook
 
-asd
+Para poder configurarla debemos de ponerle otro nombre y configurarlo especificando puertos y redis_server.
 ```
-sudo docker run -d --name temperaturas-api --network red_temperaturas iesgn/temperaturas_backend
-sudo docker run -d -p 80:3000 --name temperaturas-frontend -e TEMP_SERVER=temperaturas-api:5000 --network red_temperaturas iesgn/temperaturas_frontend
+sudo docker run -d --name contenedor_redis --network red_guestbook -v /opt/redis:/data redis redis-server --appendonly yes
+sudo docker run -d -p 80:5000 --name guestbook -e REDIS_SERVER=contenedor_redis --network red_guestbook iesgn/guestbook
 ```
 ![imagen](https://github.com/user-attachments/assets/1a4bd040-31fe-483d-9a81-31b88f9ddf80)
 
 # Ejemplo 2
+## Despliegue de la aplicación Temperaturas
+
+Creamos la red de la app que queremos desplegar, y la ejecutamos igual que en el anterior:
+```
+sudo docker network create red_temperaturas
+sudo docker run -d --name temperaturas-backend --network red_temperaturas iesgn/temperaturas_backend
+sudo docker run -d -p 80:3000 --name temperaturas-frontend --network red_temperaturas iesgn/temperaturas_frontend
+```
+![imagen](https://github.com/user-attachments/assets/cae17d38-5f7b-41b5-9a57-b0a9f56641a9)
+
+Comprobamos
+```
+localhost
+```
+![imagen](https://github.com/user-attachments/assets/67955d64-4695-4b4d-9d08-502b169ab072)
+
+# Ejemplo 3
+## Despliegue de Wordpress + mariadb
+
+asd
+```
+sudo docker network create red_wp
+```
+![imagen](https://github.com/user-attachments/assets/2dc4eb39-6cf8-46f8-97ef-c5387fee1595)
+
+asd
+```
+sudo docker run -d --name servidor_mysql \
+                --network red_wp \
+                -v /opt/mysql_wp:/var/lib/mysql \
+                -e MYSQL_DATABASE=bd_wp \
+                -e MYSQL_USER=user_wp \
+                -e MYSQL_PASSWORD=asdasd \
+                -e MYSQL_ROOT_PASSWORD=asdasd \
+                mariadb
+```
+![imagen](https://github.com/user-attachments/assets/a8071c3a-22d6-401b-8921-23750d4876af)
+
+asd
+```
+sudo docker run -d --name servidor_wp \
+                --network red_wp \
+                -v /opt/wordpress:/var/www/html/wp-content \
+                -e WORDPRESS_DB_HOST=servidor_mysql \
+                -e WORDPRESS_DB_USER=user_wp \
+                -e WORDPRESS_DB_PASSWORD=asdasd \
+                -e WORDPRESS_DB_NAME=bd_wp \
+                -p 80:80 \
+                wordpress
+```
+![imagen](https://github.com/user-attachments/assets/b19cc7aa-f564-4ffa-94be-4edab8828792)
+
 asd
 ```
 
 ```
-
-asd
-```
-
-```
-
-asd
-```
-
-```
+![imagen](https://github.com/user-attachments/assets/5968f866-9c21-450d-9ec0-b80de75d759b)
