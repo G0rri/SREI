@@ -207,13 +207,13 @@ localhost
 # Ejemplo 3
 ## Despliegue de Wordpress + mariadb
 
-asd
+Creamos una red para wordpress, pero antes paramos todos los contenedores:
 ```
 sudo docker network create red_wp
 ```
 ![imagen](https://github.com/user-attachments/assets/2dc4eb39-6cf8-46f8-97ef-c5387fee1595)
 
-asd
+Ejecutamos el docker de mysql para tener una base de datos:
 ```
 sudo docker run -d --name servidor_mysql \
                 --network red_wp \
@@ -226,7 +226,7 @@ sudo docker run -d --name servidor_mysql \
 ```
 ![imagen](https://github.com/user-attachments/assets/a8071c3a-22d6-401b-8921-23750d4876af)
 
-asd
+Ejecutamos el docker de wordpress:
 ```
 sudo docker run -d --name servidor_wp \
                 --network red_wp \
@@ -242,6 +242,6 @@ sudo docker run -d --name servidor_wp \
 
 asd
 ```
-
+localhost
 ```
 ![imagen](https://github.com/user-attachments/assets/5968f866-9c21-450d-9ec0-b80de75d759b)
