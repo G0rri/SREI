@@ -1,4 +1,3 @@
-# Ejemplo 1
 ## Instalación y Verificación de Docker Compose V2
 
 Cuando trabajamos con aplicaciones que requieren múltiples servicios, como una base de datos y un servidor web, es recomendable usar Docker Compose para gestionar los contenedores de manera eficiente. Docker Compose permite definir y ejecutar aplicaciones multicontenedor mediante un archivo YAML.
@@ -42,3 +41,5 @@ Ahora debemos de despertar los contenedores docker compose. Para ello escribimos
 sudo docker compose up -d
 ```
 ![imagen](https://github.com/user-attachments/assets/5c1bf3d8-5a81-4140-92d0-ef996d56b3c1)
+
+# Ejemplo 1
