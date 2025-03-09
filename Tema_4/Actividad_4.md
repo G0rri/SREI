@@ -240,7 +240,7 @@ sudo docker run -d --name servidor_wp \
 ```
 ![imagen](https://github.com/user-attachments/assets/b19cc7aa-f564-4ffa-94be-4edab8828792)
 
-asd
+Comprobamos:
 ```
 localhost
 ```
