@@ -138,3 +138,27 @@ sudo echo "<h1>Hola</h1>" > index.html
 ll
 ```
 ![imagen](https://github.com/user-attachments/assets/3429458e-9b3e-4fa1-afcf-efd09ab2cdfc)
+
+Continuamos montando en el anterior directorio un contenedor con:
+```
+sudo docker run -d --name <ejemplo3> -v /home/usuario/web:/usr/local/apache2/htdocs -p 8080:80 httpd:2.4
+```
+![imagen](https://github.com/user-attachments/assets/4c37c3dc-19ca-4a60-9258-86f327ba5928)
+
+Y lo comprobamos:
+![imagen](https://github.com/user-attachments/assets/cf227184-b7dc-4909-90aa-137d00510ecf)
+
+Y ahora borramos, creamos otro y lo volvemos a asociar:
+```
+Borramos:
+sudo docker rm -f my-apache-app
+
+Creamos:
+sudo docker run -d --name my-apache-app -v /home/usuario/web:/usr/local/apache2/htdocs -p 8080:80 httpd:2.4
+
+Comprobamos:
+sudo curl http://localhost:8080
+```
+![imagen](https://github.com/user-attachments/assets/b016a234-e258-4a76-8104-86169b5b4dff)
+
+Y listo.
