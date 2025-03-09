@@ -205,4 +205,4 @@ Y para eliminarlos:
 ```
 sudo docker compose down -v
 ```
-![Uploading imagen.png…]()
+![imagen](https://github.com/user-attachments/assets/adf63693-0ea2-432e-bd88-a936021a0c28)
