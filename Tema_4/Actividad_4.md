@@ -53,6 +53,8 @@ sudo docker volume rm mi_volumen
 
 Los bind mounts permiten mapear un directorio o archivo del sistema anfitrión dentro del contenedor. A diferencia de los volúmenes, los bind mounts permiten que el usuario tenga control directo sobre los datos.
 
+### Crear un bind mount
+
 Para crear un bind, primero lo usaremos en un directorio concreto para no liarnos y necesitaremos de un archivo html también. Por último crearemos un docker con la ruta anteriormente especificada con la imagen docker en este caso de nginx.
 ```
 sudo mkdir ~/datos_host
@@ -63,3 +65,11 @@ sudo docker run -d --name contenedor2 -v ~/datos_host:/usr/share/nginx/html ngin
 ![imagen](https://github.com/user-attachments/assets/a311be3b-b72a-4b51-97e5-b5d4ef5db1f0)
 ![imagen](https://github.com/user-attachments/assets/04a7b389-9f75-46f8-ad52-6372963a7d0d)
 ![imagen](https://github.com/user-attachments/assets/75bc12d6-953c-4fce-b429-e11da377f183)
+
+### Verificar que el archivo se encuentra dentro del contenedor
+
+Para ver si se encuentra dentro del contenedor, usamos:
+```
+sudo docker exec -it contenedor2 cat /usr/share/nginx/html/index.html
+```
+![imagen](https://github.com/user-attachments/assets/275c0ac6-59eb-4838-90c0-04e9faeed76a)
