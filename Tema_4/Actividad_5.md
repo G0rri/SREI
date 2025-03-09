@@ -56,3 +56,92 @@ Y para eliminarlos:
 sudo docker compose down -v
 ```
 ![imagen](https://github.com/user-attachments/assets/104aa39e-9904-4c37-8c84-302dbdd7a9b0)
+
+# Ejemplo 2
+## Despliegue de la aplicación Temperaturas
+
+Modificamos el archivo docker-compose.yaml:
+```
+version: '3.1'
+services:
+  frontend:
+    container_name: temperaturas-frontend
+    image: iesgn/temperaturas_frontend
+    restart: always
+    ports:
+      - "8081:3000"
+    environment:
+      TEMP_SERVER: temperaturas-backend:5000
+    depends_on:
+      - backend
+  backend:
+    container_name: temperaturas-backend
+    image: iesgn/temperaturas_backend
+    restart: always
+```
+![imagen](https://github.com/user-attachments/assets/67b8b371-2fed-44bf-ac4a-bd752a8bbfc4)
+
+Ahora lo iniciamos y vemos que se ha creado:
+```
+sudo docker compose up -d
+```
+![imagen](https://github.com/user-attachments/assets/8dd2fcc6-1154-4fbe-90df-b2c68517adb1)
+
+Comprobamos:
+![imagen](https://github.com/user-attachments/assets/c3c52b12-14f3-446d-b533-44914b8a7c75)
+
+Para parar los contenedores usamos:
+```
+sudo docker compose stop
+```
+Y para eliminarlos:
+```
+sudo docker compose down -v
+```
+![imagen](https://github.com/user-attachments/assets/104aa39e-9904-4c37-8c84-302dbdd7a9b0)
+
+# Ejemplo 3
+## Despliegue de Wordpress + MariaDB
+
+Ahora lo mismo que antes pero con Wordpress y MariaDB, así que modificamos el archivo docker-compose.yaml:
+```
+version: '3.1'
+services:
+  wordpress:
+    container_name: servidor_wp
+    image: wordpress
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: user_wp
+      WORDPRESS_DB_PASSWORD: asdasd
+      WORDPRESS_DB_NAME: bd_wp
+    ports:
+      - 80:80
+    volumes:
+      - wordpress_data:/var/www/html/wp-content
+  db:
+    container_name: servidor_mysql
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: bd_wp
+      MYSQL_USER: user_wp
+      MYSQL_PASSWORD: asdasd
+      MYSQL_ROOT_PASSWORD: asdasd
+    volumes:
+      - mariadb_data:/var/lib/mysql
+volumes:
+    wordpress_data:
+    mariadb_data:
+```
+![imagen](https://github.com/user-attachments/assets/5f4f659e-5359-4043-a759-4b199f5ddbcd)
+
+Lo iniciamos y vemos que se ha creado:
+```
+sudo docker compose up -d
+```
+![imagen](https://github.com/user-attachments/assets/1a002d06-68c4-41b9-83ee-a1a6c1520fa3)
+
+Y comprobamos:
+![imagen](https://github.com/user-attachments/assets/8c6cf95e-0c0b-4aa4-afd7-89ec5919d443)
