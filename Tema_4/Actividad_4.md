@@ -146,6 +146,7 @@ sudo docker run -d --name <ejemplo3> -v /home/usuario/web:/usr/local/apache2/htd
 ![imagen](https://github.com/user-attachments/assets/4c37c3dc-19ca-4a60-9258-86f327ba5928)
 
 Y lo comprobamos:
+
 ![imagen](https://github.com/user-attachments/assets/cf227184-b7dc-4909-90aa-137d00510ecf)
 
 Y ahora borramos, creamos otro y lo volvemos a asociar:
