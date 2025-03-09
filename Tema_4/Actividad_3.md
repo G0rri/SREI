@@ -1,4 +1,5 @@
-![imagen](https://github.com/user-attachments/assets/7b3e9f82-8922-46ca-b0f8-87acad644f64)## Descarga la imagen de ubuntu
+## Descarga la imagen de ubuntu
+![imagen](https://github.com/user-attachments/assets/7b3e9f82-8922-46ca-b0f8-87acad644f64)
 
 Para descargar una imagen utilizamos el comando pull y el nombre de la imagen a descargar.
 ```
