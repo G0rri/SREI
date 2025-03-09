@@ -136,3 +136,39 @@ docker run -d -p 80:80 --name ejemplo2 josedom24/ejemplo2:v2
 Y listo
 
 ![imagen](https://github.com/user-attachments/assets/d304619c-69ce-4941-ac3a-84513d6730c7)
+
+# Ejemplo 3
+## Construcción de imágenes con una una aplicación Python
+
+Modificamos el archivo Dockerfile de nuevo:
+```
+FROM debian:stable-slim
+
+RUN apt-get update && apt-get install -y apache2 libapache2-mod-php8.2 php8.2 && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+COPY app /var/www/html/
+RUN rm /var/www/html/index.html
+
+EXPOSE 80
+CMD ["apachectl", "-D", "FOREGROUND"]
+```
+![imagen](https://github.com/user-attachments/assets/41de36b8-2522-4f79-8643-b0f06c7c06b9)
+
+Lo construimos:
+```
+sudo docker build -t josedom24/ejemplo3:v1 .
+```
+![imagen](https://github.com/user-attachments/assets/63d09ab4-1179-49b0-9471-fa2006da5f2e)
+
+Y lo ejecutamos en el puerto 3000:
+```
+sudo docker run -d -p 80:3000 --name ejemplo2 josedom24/ejemplo3:v1
+```
+![imagen](https://github.com/user-attachments/assets/f2f5ca64-2e23-4dfd-8b76-d1d97862a94c)
+
+Y ahora lo comprobamos:
+
+asd
+```
+
+```
