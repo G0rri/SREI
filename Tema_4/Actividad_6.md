@@ -102,9 +102,9 @@ sudo docker build -t josedom24/ejemplo2:v1 .
 ```
 ![imagen](https://github.com/user-attachments/assets/fad6cbd9-500f-49f9-8ac6-fb6c3c8623f0)
 
-asd
+Ejecutamos el contenedor:
 ```
-
+sudo docker run -d -p 80:80 --name ejemplo2 josedom24/ejemplo2:v1
 ```
 ![imagen](https://github.com/user-attachments/assets/2ae632ff-b9f1-489c-a027-fb9b609a63ee)
 
@@ -134,3 +134,5 @@ docker run -d -p 80:80 --name ejemplo2 josedom24/ejemplo2:v2
 ![imagen](https://github.com/user-attachments/assets/8c43e827-5125-41fe-826b-f329c9fcdedb)
 
 Y listo
+
+![imagen](https://github.com/user-attachments/assets/d304619c-69ce-4941-ac3a-84513d6730c7)
