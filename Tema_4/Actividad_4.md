@@ -81,4 +81,5 @@ Para eliminar el contenedor sin perder los datos usamos:
 sudo docker rm -f contenedor2
 ```
 ![imagen](https://github.com/user-attachments/assets/3e9a454e-a2ef-4d2a-a3cd-d91490deed07)
- Y como vemos en la imagen los datos se siguen guardando.
+
+Y como vemos en la imagen los datos se siguen guardando.
