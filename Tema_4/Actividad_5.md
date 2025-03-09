@@ -102,6 +102,7 @@ sudo docker compose down -v
 
 # Ejemplo 3
 ## Despliegue de Wordpress + MariaDB
+### Utilizando docker
 
 Ahora lo mismo que antes pero con Wordpress y MariaDB, así que modificamos el archivo docker-compose.yaml:
 ```
@@ -145,3 +146,63 @@ sudo docker compose up -d
 
 Y comprobamos:
 ![imagen](https://github.com/user-attachments/assets/8c6cf95e-0c0b-4aa4-afd7-89ec5919d443)
+
+Para parar los contenedores usamos:
+```
+sudo docker compose stop
+```
+Y para eliminarlos:
+```
+sudo docker compose down -v
+```
+![imagen](https://github.com/user-attachments/assets/235200b7-b0bc-43ab-97d1-c6ce8d0ab3f4)
+
+### Utilizando bind-mount
+
+Es igual, pero debemos de cambiar el archivo de docker-compose.yaml:
+```
+version: '3.1'
+services:
+  wordpress:
+    container_name: servidor_wp
+    image: wordpress
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: user_wp
+      WORDPRESS_DB_PASSWORD: asdasd
+      WORDPRESS_DB_NAME: bd_wp
+    ports:
+      - 80:80
+    volumes:
+      - ./wordpress:/var/www/html/wp-content
+  db:
+    container_name: servidor_mysql
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: bd_wp
+      MYSQL_USER: user_wp
+      MYSQL_PASSWORD: asdasd
+      MYSQL_ROOT_PASSWORD: asdasd
+    volumes:
+      - ./mysql:/var/lib/mysql
+```
+![imagen](https://github.com/user-attachments/assets/f406face-feac-4db1-8ca6-4b944486fa8f)
+
+Y repetimos el proceso:
+
+![imagen](https://github.com/user-attachments/assets/81f82cb9-cb10-4352-8455-6dea70ed2152)
+
+Comprobamos:
+![imagen](https://github.com/user-attachments/assets/75d647cb-2581-421a-ac5d-a2bed9d51be8)
+
+Para parar los contenedores usamos:
+```
+sudo docker compose stop
+```
+Y para eliminarlos:
+```
+sudo docker compose down -v
+```
+![Uploading imagen.png…]()
