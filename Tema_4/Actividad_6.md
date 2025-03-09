@@ -68,18 +68,30 @@ Y comprobamos:
 
 ![imagen](https://github.com/user-attachments/assets/12b1a126-7e9a-4f40-811d-d86c66708c54)
 
-# Ejemplo
+# Ejemplo 2
 ## Construcción de imágenes con una una aplicación PHP
 ### Desde una imagen base
 
 Aquí debemos de poner esto en el dockerfile y se encargará de todos los requisitos necesarios:
 ```
-# syntax=docker/dockerfile:1
+# Usa Debian como base
 FROM debian:stable-slim
-RUN apt-get update && apt-get install -y apache2 libapache2-mod-php7.4 php7.4 && apt-get clean && rm -rf /var/lib/apt/lists/* && rm /var/www/html/index.html
+
+# Actualiza los repositorios e instala Apache y PHP
+RUN apt-get update && apt-get install -y \
+    apache2 libapache2-mod-php php \
+    && apt-get clean && rm -rf /var/lib/apt/lists/* \
+    && rm /var/www/html/index.html
+
+# Copia la aplicación al directorio de Apache
 COPY app /var/www/html/
+
+# Expone el puerto 80
 EXPOSE 80
-CMD apache2ctl -D FOREGROUND
+
+# Inicia Apache en primer plano
+CMD ["apache2ctl", "-D", "FOREGROUND"]
+
 ```
 ![imagen](https://github.com/user-attachments/assets/66594d7d-172d-4e42-a070-afa68c32db76)
 
@@ -96,37 +108,29 @@ asd
 ```
 ![imagen](https://github.com/user-attachments/assets/2ae632ff-b9f1-489c-a027-fb9b609a63ee)
 
-asd
-```
+Y comprobamos y vemos que se ve así:
 
-```
+![imagen](https://github.com/user-attachments/assets/26b9857f-a9ab-46c7-9122-c8ffc67f18b1)
 
-asd
-```
+![imagen](https://github.com/user-attachments/assets/8ac0a50e-c2f2-4524-a2ce-1766d33b39fb)
 
-```
+### Desde una imagen con PHP instalado
 
-asd
+Cambiamos el fichero Dockerfile y en mi caso he cambiado la version de php por la que tengo:
 ```
+# syntax=docker/dockerfile:1
+FROM php:8.3.6-apache
+COPY app /var/www/html/
+EXPOSE 80
+```
+![imagen](https://github.com/user-attachments/assets/4768ce2e-f845-455f-b302-b3d36b6f71de)
 
+Construimos el docker y lo ejecutamos:
 ```
+docker build -t josedom24/ejemplo2:v2 .
+docker run -d -p 80:80 --name ejemplo2 josedom24/ejemplo2:v2
+```
+![imagen](https://github.com/user-attachments/assets/75b2af7c-373b-41c7-b011-7915b2735478)
+![imagen](https://github.com/user-attachments/assets/8c43e827-5125-41fe-826b-f329c9fcdedb)
 
-asd
-```
-
-```
-
-asd
-```
-
-```
-
-asd
-```
-
-```
-
-asd
-```
-
-```
+Y listo
