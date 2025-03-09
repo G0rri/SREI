@@ -67,3 +67,66 @@ sudo docker run -d -p 80:80 --name ejemplo1 josedom24/ejemplo1:v3
 Y comprobamos:
 
 ![imagen](https://github.com/user-attachments/assets/12b1a126-7e9a-4f40-811d-d86c66708c54)
+
+# Ejemplo
+## Construcción de imágenes con una una aplicación PHP
+### Desde una imagen base
+
+Aquí debemos de poner esto en el dockerfile y se encargará de todos los requisitos necesarios:
+```
+# syntax=docker/dockerfile:1
+FROM debian:stable-slim
+RUN apt-get update && apt-get install -y apache2 libapache2-mod-php7.4 php7.4 && apt-get clean && rm -rf /var/lib/apt/lists/* && rm /var/www/html/index.html
+COPY app /var/www/html/
+EXPOSE 80
+CMD apache2ctl -D FOREGROUND
+```
+![imagen](https://github.com/user-attachments/assets/66594d7d-172d-4e42-a070-afa68c32db76)
+
+Antes de construirlo debemos de crear el directorio que le hemos especificado al archivo de antes, es decir /app:
+```
+sudo mkdir app
+sudo docker build -t josedom24/ejemplo2:v1 .
+```
+![imagen](https://github.com/user-attachments/assets/fad6cbd9-500f-49f9-8ac6-fb6c3c8623f0)
+
+asd
+```
+
+```
+![imagen](https://github.com/user-attachments/assets/2ae632ff-b9f1-489c-a027-fb9b609a63ee)
+
+asd
+```
+
+```
+
+asd
+```
+
+```
+
+asd
+```
+
+```
+
+asd
+```
+
+```
+
+asd
+```
+
+```
+
+asd
+```
+
+```
+
+asd
+```
+
+```
