@@ -87,6 +87,7 @@ Y como vemos en la imagen los datos se siguen guardando.
 # Ejemplo 2
 ## Asociando almacenamiento a los contenedores: volúmenes Docker
 
+### Usando volúmenes docker
 Lo primero es crear un volumen, para ello:
 Para crear un volumen usamos el comando 'volume create':
 ```
