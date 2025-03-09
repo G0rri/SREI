@@ -73,3 +73,12 @@ Para ver si se encuentra dentro del contenedor, usamos:
 sudo docker exec -it contenedor2 cat /usr/share/nginx/html/index.html
 ```
 ![imagen](https://github.com/user-attachments/assets/275c0ac6-59eb-4838-90c0-04e9faeed76a)
+
+### Eliminar el contenedor sin perder los datos
+
+Para eliminar el contenedor sin perder los datos usamos:
+```
+sudo docker rm -f contenedor2
+```
+![imagen](https://github.com/user-attachments/assets/3e9a454e-a2ef-4d2a-a3cd-d91490deed07)
+ Y como vemos en la imagen los datos se siguen guardando.
