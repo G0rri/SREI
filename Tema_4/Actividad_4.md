@@ -124,4 +124,17 @@ Comprobamos:
 sudo curl http://localhost:8080
 ```
 ![imagen](https://github.com/user-attachments/assets/57e19c68-8b84-40a4-9746-ea7241465cab)
- Y listo, se ha vuelto a asociar otro volumen perfectamente.
+Y listo, se ha vuelto a asociar otro volumen perfectamente.
+
+# Ejemplo 3
+## Asociando almacenamiento a los contenedores: bind mount
+
+Ahora vamos a algo similar al anterior ejemplo pero con bind mount. Así que lo primero que debemos de hacer es crear un directorio para centralizar el trabajo. Y una vez hecho crearemos un html para mostrar algo:
+```
+sudo mkdir web
+sudo chmod 777 web
+cd web
+sudo echo "<h1>Hola</h1>" > index.html
+ll
+```
+![imagen](https://github.com/user-attachments/assets/3429458e-9b3e-4fa1-afcf-efd09ab2cdfc)
