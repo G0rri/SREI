@@ -2,8 +2,8 @@
 
 Primero actualizamos ubuntu
 ```
- sudo apt update
- sudo apt install apt-transport-https ca-certificates curl software-properties-common
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release
 ```
 ![image](https://github.com/user-attachments/assets/91e4d404-494a-4a1d-a75f-33faed990474)
 
@@ -11,19 +11,20 @@ Primero actualizamos ubuntu
 
 Con el siguiente comando añadimos la clave para luego poder descargar el repositorio que contiene docker:
 ```
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 ![image](https://github.com/user-attachments/assets/19691a2d-5c05-47a8-bd9a-f535c30644fc)
 
 Añadimos el repositorio que contiene docker con:
 ```
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 ![image](https://github.com/user-attachments/assets/ada6cdf0-8422-4c1a-a708-14195dc36c19)
 
 Volvemos a actualizar los repositorios y los actualizamos:
 ```
-sudo apt update && sudo apt upgrade -y
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 ![imagen](https://github.com/user-attachments/assets/eeff7e67-c81b-41c7-b0b5-779ed9d18939)
 
